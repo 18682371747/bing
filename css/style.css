@@ -136,7 +136,6 @@ section.main {
     background-image: linear-gradient(135deg, #358FE7 0%, #3C33DC 44%, #161F8B 66%);
     position: relative;
     padding-bottom: 1px;
-    margin-bottom: 80px;
 }
 
 .container {
@@ -426,7 +425,7 @@ img {
 .neuro_item h4 {
     margin: 0px 0 15px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
     height: 40px;
@@ -506,17 +505,19 @@ h2 {
 }
 
 .earn_item p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 22px;
-    color: #4c657d;
-    font-weight: 400;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
 }
 
 p.earn_question {
-    font-weight: 500;
-    font-style: italic;
     margin-bottom: 22px;
-    color: #2C3E51;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .earn_item {
@@ -684,7 +685,7 @@ p.earn_question {
 }
 
 .map_step {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     position: relative;
     padding-left: 30px;
 }
@@ -721,7 +722,7 @@ p.earn_question {
     top: calc(50% - 3px);
     z-index: 1;
     border-radius: 50%;
-    box-shadow: 0 0 10px #fff;
+    /* box-shadow: 0 0 10px #fff; */
 }
 
 .map_step.current:before {
@@ -729,13 +730,13 @@ p.earn_question {
 }
 
 .map_step.current:after {
-    background: #fff;
-    box-shadow: 0 0 15px 2px #11D66A;
+    background: #f3a100;
+    box-shadow: 0 0 15px 2px #f3a100;
     left: 19px;
     height: 11px;
     width: 11px;
     transform: translate(-2px, -2px);
-    animation: green 1s linear alternate infinite;
+    animation: yellow 1s linear alternate infinite;
 }
 
 @keyframes green {
@@ -783,6 +784,12 @@ p.earn_question {
     font-size: 13px;
     margin-bottom: 20px;
 }
+.team_position1 {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+    padding: 0px 30px;
+}
 
 .team_social {
     margin-bottom: 0;
@@ -796,6 +803,13 @@ p.earn_question {
 
 .team_item {
     padding-bottom: 40px;
+    border: 1px solid #035cea;
+    padding-top: 30px;
+    border-radius: 10px;
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    margin: 1% 1%;
 }
 
 .our_partners a,
@@ -807,12 +821,13 @@ p.earn_question {
 footer {
     background-image: linear-gradient(-180deg, #121C82 0%, #081169 100%);
     color: #fff;
-    padding: 30px 0 60px;
+    padding: 150px 0 60px;
+    margin-top: -100px;
 }
 
 .subscribe h3 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: unset;
     margin: 0 0 10px;
 }
 
@@ -1053,6 +1068,7 @@ input[type="submit"] {
         clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
         padding-top: 30px;
+        padding-bottom: 50px;
     }
     .product_wrap {
         background: url(../imgs/mg02.jpg) 50% no-repeat;
@@ -1073,6 +1089,54 @@ input[type="submit"] {
         padding-bottom: 130px;
         margin-top: -120px;
     }
+    .user_wrap {
+        background: url(../imgs/mg04.png) 50% no-repeat;
+        background-size: cover;
+        color: #fff;
+        clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
+        padding-top: 134px;
+        padding-bottom: 130px;
+        margin-top: -125px;
+    }
+    .map_team {
+        background: url(../imgs/mg05.png) 50% no-repeat;
+        background-size: cover;
+        color: #fff;
+        clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
+        padding-top: 134px;
+        margin-top: -125px;
+    }
+     .consult_wrap {
+        background: #f3f3f3;
+        background-size: cover;
+        clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+        -webkit-clip-path:polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+        padding-top: 134px;
+        margin-top: -125px;
+    }
+     .mentions_wrap {
+        background: url(../imgs/mg06.png) 50% no-repeat;
+        background-size: cover;
+        clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+        -webkit-clip-path:polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+        padding-top: 134px;
+        margin-top: -125px;
+        color: #fff;
+    }
+     .news_wrap {
+        background: #f3f3f3;
+        background-size: cover;
+        clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+        -webkit-clip-path:polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+        padding-top: 100px;
+        margin-top: -160px;
+        padding-bottom: 50px;
+    }
+    .db_wrap {
+    padding-bottom: 100px;
+}
     .main_title {
         float: left;
         width: 50%;
@@ -1158,13 +1222,16 @@ input[type="submit"] {
         font-size: 40px;
     }
     .idea_wrap h2 {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     h2~p {
         padding: 0 170px;
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: bold;
+    }
+    .db_wrap h2~p{
+        padding: 0;
     }
     .img_idea {
         margin-top: 80px;
@@ -1198,7 +1265,7 @@ input[type="submit"] {
         width: 300px;
         margin-top: 0px;
         float: right;
-        margin-right: 110px;
+        margin-right: 112px;
     }
     .neuro_block_3 {
         margin-top: 10px;
@@ -1226,6 +1293,12 @@ input[type="submit"] {
         width: 90%;
         float: left;
     }
+    .neuro_item_2:after {
+    width: 78px;
+    height: 1px;
+    background: url(../img/line_2.png) 50% no-repeat;
+    background-size: contain;
+}
     .neuro_item_3 {
         margin-top: 40px;
         width: 90%;
@@ -1290,7 +1363,7 @@ input[type="submit"] {
         text-align: center;
     }
     .earn_wrap {
-        margin: 80px 0 130px;
+        margin: 0;
     }
     .earn_item {
         float: left;
@@ -1305,8 +1378,22 @@ input[type="submit"] {
         position: relative;
         height: 280px;
         margin-bottom: 30px;
+        margin-top: 100px;
     }
     .earn_img img {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .db_wrap_item {
+        float: left;
+        width: 49%;
+        text-align: center;
+        padding: 60px 20px 0px;
+    }
+    .db_wrap_item img {
         position: absolute;
         bottom: 0;
         margin-bottom: 0;
@@ -1455,15 +1542,14 @@ input[type="submit"] {
         order: 0;
         font-size: 14px;
         color: #A0B5F2;
-        height: 100px;
+        height: 67px;
         display: flex;
-        align-items: flex-end;
         width: 100%;
         justify-content: center;
-        margin-bottom: 35px;
     }
     .step_month {
         order: 1;
+        margin-top: 30px;
     }
     .current .step_title,
     .future .step_title {
@@ -1472,6 +1558,7 @@ input[type="submit"] {
     }
     .roadmap_block_2 {
         flex-direction: row-reverse;
+        height: 129px;
     }
     .current .step_month,
     .future .step_month,
@@ -1486,7 +1573,12 @@ input[type="submit"] {
     .map_step:after,
     .map_step.current:after {
         left: calc(50% - 3px);
-        top: 124px;
+        top: 52px;
+    }
+    .roadmap_block_3 .map_step:after,
+    .roadmap_block_3 .map_step.current:after {
+        left: calc(50% - 3px);
+        top: 60px;
     }
     .map_step:before {
         display: none;
@@ -1498,16 +1590,26 @@ input[type="submit"] {
         width: 100%;
         height: 2px;
         background: linear-gradient(to right, #41CBFF, #fff);
-        top: 127px;
+        top: 54px;
+        opacity: .4;
+    }
+    .roadmap_block_3:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #41CBFF, #fff);
+        top: 63px;
         opacity: .4;
     }
     .roadmap_block_1:after {
         content: "";
         position: absolute;
-        top: 127px;
+        top: 54px;
         right: -20px;
         width: 20px;
-        height: 186px;
+        height: 131px;
         border: 2px solid #fff;
         border-left: none;
         border-radius: 0px 10px 10px 0px;
@@ -1516,10 +1618,10 @@ input[type="submit"] {
     .roadmap_block_2:after {
         content: "";
         position: absolute;
-        top: 127px;
+        top: 54px;
         left: -20px;
         width: 20px;
-        height: 186px;
+        height: 140px;
         border: 2px solid #41CBFF;
         border-right: none;
         border-radius: 10px 0 0 10px;
@@ -1534,9 +1636,24 @@ input[type="submit"] {
         justify-content: center
     }
     .team_item {
-        flex: 0 0 25%;
+        flex: 0 0 23%;
         margin-bottom: 20px;
         display: block;
+       
+       
+    }
+    .team_item1 {
+        flex: 0 0 30%;
+        margin-bottom: 20px;
+        display: block;
+       
+       
+    }
+    .team_item2 {
+        flex: 0 0 20%;
+        margin-bottom: 20px;
+        display: block;
+        margin: 1%;
     }
     .team_social {
         text-align: center;
@@ -1551,12 +1668,14 @@ input[type="submit"] {
         padding-bottom: 30px;
     }
     .subscribe h3 {
-        margin: 0 auto 0 0;
+        margin: 0 30px 0 0;
     }
     .subs_desc {
-        margin: 0 20px 0 auto;
-        width: 25%;
-        font-size: 14px;
+        margin-left: 20px;
+        /* width: 25%; */
+        font-size: 12px;
+        color: #fff;
+        opacity: 1;
     }
     #sbs-form {
         display: flex;
@@ -1572,6 +1691,7 @@ input[type="submit"] {
     input {
         margin: 0 20px;
         width: 220px;
+        color: #fff;
     }
     input[type="submit"] {
         margin-right: 0;
@@ -2372,10 +2492,13 @@ p.profile_bill {
 }
 
 input[type="submit"] {
-    background: #079BFF;
+    background: #f19200;
     color: #fff;
     width: auto;
-    padding: 8px 20px;
+    padding: 0 25px;
+    margin-left: 0;
+    font-size: 16px;
+    height: 40px;
 }
 
 .social-share {

@@ -1,50 +1,50 @@
 div#header {
     height: 100px;
-   background-color: #3C39DC;
-   padding-top: 250px;
-   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 calc(100%));
-   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 calc(100%));
-   padding-bottom: 230px;
+    background-color: #3C39DC;
+    padding-top: 250px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 calc(100%));
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 calc(100%));
+    padding-bottom: 230px;
 }
-
-
 
 div#banner {
     height: 100px;
-   background-color: #fff;
-   padding-top: 250px;
-   clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
-   -webkit-clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
-   padding-bottom: 230px;
-   margin-top: -100px;
+    background-color: #fff;
+    padding-top: 250px;
+    clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+    -webkit-clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+    padding-bottom: 230px;
+    margin-top: -100px;
 }
 
 div#container_bg {
     height: 100px;
     background-color: #3C39DC;
     padding-top: 250px;
-     clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
-   -webkit-clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
-   padding-bottom: 230px;
-   margin-top: -100px;
+    clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+    -webkit-clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+    padding-bottom: 230px;
+    margin-top: -100px;
 }
 
 div#footer {
     height: 100px;
     background-color: #fff;
     padding-top: 100px;
-    clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%) );
-    -webkit-clip-path: polygon(0 100px, 100% 0%, 100% 100%, 0 100% );
+    clip-path: polygon(0 100px, 100% 0%, 100% calc(100% - 100px), 0 calc(100%));
+    -webkit-clip-path: polygon(0 100px, 100% 0%, 100% 100%, 0 100%);
     margin-top: -100px;
 }
+
 .time {
     display: flex;
     position: relative;
     width: 100%;
     height: 150px;
-    border: 1px solid  rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
 }
+
 .time1 {
     display: inline-block;
     width: 22%;
@@ -57,137 +57,217 @@ div#footer {
     width: 79%;
     text-align: right;
 }
+
 .time_line {
-        display: inline-block;
-        width: 60px;
-        height: 70px;
-        text-align: center;
-        background: #e28b00;
-        border-radius: 5px;
-        margin: 0 2px;
-    }
-    .time_line>div:first-child {
-        height: 50px;
-        vertical-align: middle;
-        line-height: 50px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-    }
-    
-    .time_line>div:last-child {
-        font-size: 12px;
-    }
-    .time_content {
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-        display: flex;
-        border-radius: 8px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        text-align: center;
-        background:rgba(255,255,255,0.3);
-        padding: 35px 15px;
-        margin: 5px;
-    }
-    .count_progress {
-        display: flex;
-        position: relative;
-        width: 100%;
-        height: 300px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 8px;
-    }
-    
-    .count_progress_content {
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-        border-radius: 8px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        text-align: center;
-        background: rgba(255,255,255,0.3);
-        padding: 35px 15px;
-        margin: 5px;
-    }
-    .progress_title {
-        text-align: left;
-    }
-    
-    .proportion_layout {
-        width: 100%;
-        height: 40px;
-        background: rgba(255,255,255,0.3);
-        border: 1px solid rgba(255,255,255,0.3);
-        border-radius: 20px;
-        padding: 2px;
-    }
-    
-    .proportion_panel {
-        background: rgba(255,165,0,0.8);
-        width: 51%;
-        height: 100%;
-        border-radius: 20px;
-    }
-    
-    .progress_proportion_count {
-        line-height: 40px;
-        font-size: .825rem;
-        text-align: right;
-    }
-    
-    .progress_proportion_num {position: absolute;top: 0;left: 47%;}
-    
-    .progress_proportion_money {position: absolute;top: 25px;left: 44%;}
-    
-    .progress_proportion_direction {
-        font-size: 3rem;
-        position: absolute;
-        top: 55px;
-        left: 44%;
-    }
-    
-    .proportion_content {
-        position: relative;
-        width: 100%;
-        height: 100px;
-    }
-    .product_wrap_img{
-        text-align: center;
-    }
-    .img_computer {
-        width: 65%;
-        display: inline-block;
-        margin-top: 0px;
-        position: relative;
-    }
-    
-    .img_phone {
-        width: 15%;
-        display: inline-block;
-        margin-top: 60px;
-        position: relative;
-    }
-    .p_computer01,.p_computer02 {
-        position: absolute;
-        top: 3%;
-        width: 72%;
-        left: 13%;
-    }
-    
-    .p_phone01,.p_phone02 {
-        position: absolute;
-        top: 3.5%;
-        width: 90%;
-        left: 3%;
-    }
-    canvas {
-        position: absolute;
-        top: 0;
-    }
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+    text-align: center;
+    background: #e28b00;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.time_line>div:first-child {
+    height: 50px;
+    vertical-align: middle;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.time_line>div:last-child {
+    font-size: 12px;
+}
+
+.time_content {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 35px 15px;
+    margin: 5px;
+}
+
+.count_progress {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+
+.count_progress_content {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 35px 15px;
+    margin: 5px;
+}
+
+.progress_title {
+    text-align: left;
+}
+
+.proportion_layout {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.proportion_panel {
+    background: rgba(255, 165, 0, 0.8);
+    width: 51%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.progress_proportion_count {
+    line-height: 40px;
+    font-size: .825rem;
+    text-align: right;
+}
+
+.progress_proportion_num {
+    position: absolute;
+    top: 0;
+    left: 47%;
+}
+
+.progress_proportion_money {
+    position: absolute;
+    top: 25px;
+    left: 44%;
+}
+
+.progress_proportion_direction {
+    font-size: 3rem;
+    position: absolute;
+    top: 55px;
+    left: 44%;
+}
+
+.proportion_content {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.product_wrap_img {
+    text-align: center;
+}
+
+.img_computer {
+    width: 65%;
+    display: inline-block;
+    margin-top: 0px;
+    position: relative;
+}
+
+.img_phone {
+    width: 15%;
+    display: inline-block;
+    margin-top: 60px;
+    position: relative;
+}
+
+.p_computer01,
+.p_computer02 {
+    position: absolute;
+    top: 3%;
+    width: 72%;
+    left: 13%;
+}
+
+.p_phone01,
+.p_phone02 {
+    position: absolute;
+    top: 3.5%;
+    width: 90%;
+    left: 3%;
+}
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+}
+
+#canvas2 {
+    position: absolute;
+    top: 1px;
+    left: -106px;
+}
+
+#canvas3 {
+    position: absolute;
+    top: 18px;
+}
+
+#canvas4 {
+    position: absolute;
+    top: 18px;
+    left: -70px;
+}
+
+#canvas5 {
+    position: absolute;
+    top: -42px;
+}
+
+#canvas6 {
+    position: absolute;
+    top: -42px;
+    left: -120px;
+}
+
+.db_wrap .table {
+    width: 50%;
+    margin: auto;
+}
+
+.db_wrap .table table {
+    width: 100%;
+}
+
+.db_wrap td {
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.db_wrap td+td {
+    text-align: left;
+}
+
+.boxcaptionY {
+    float: left;
+    position: absolute;
+    height: 360px;
+    width: 100%;
+    top: 360px;
+    left: 0;
+    background: #035cea;
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px 10px;
+}
