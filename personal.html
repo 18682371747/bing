@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="bing">
+    <meta name="description" content="bing">
+
+    <link rel="stylesheet" type="text/css" href="./css/element.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/personal.css">
+
+
+</head>
+
+<body>
+    <div id="main">
+        <section class="main">
+            <div class="main_wrap">
+                <div id="particle_wrap">
+                    <div id="particle-canvas"></div>
+                </div>
+                <div class="container">
+                    <header>
+                        <div class="nav_ham"></div>
+                        <div class="nav_header">
+                            <ul class="nav">
+
+                                <li>
+                                    <a href="javascript:void(0);" id="btn_registration" class="btn btn_enter" @click="showLogin">登录</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" id="btn_sign_in" class="btn btn_enter" @click="showRegister">注册</a>
+                                </li>
+
+                                <div id="lang">
+                                    <span id="current-lang">
+                                        cn
+                                        <span class="show-more-lang">▼</span>
+                                    </span>
+                                    <ul id="langs">
+                                        <li class="item-lang">
+                                            <a href="/en">en</a>
+                                        </li>
+                                        <li class="item-lang">
+                                            <a href="/ru">cn</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <a href="index.html">
+                                主页
+                            </a>
+                            <a href="index.html#product">
+                                产品
+                            </a>
+                            <a href="index.html#token">
+                                令牌
+                            </a>
+                            <a href="index.html#team">
+                                团队
+                            </a>
+                            <a href="index.html#cooperation">
+                                合作
+                            </a>
+                            <a target="_blank" href="https://t.me/NRM_kor">
+                                白皮书
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="/cn">
+                                <img src="./imgs/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="form_wrap">
+                <div class="container">
+                    <el-row :gutter="20">
+                        <el-col :span="4">
+                            <div class="grid-content bg-purple">
+                                <img src="./imgs/user.png" alt="">
+                                <div class="left_username">26274089@qq.com</div>
+                                <div class="left_menu">
+                                    <a href="index.html">
+                                        主页
+                                    </a>
+                                    <a href="index.html#product">
+                                        产品
+                                    </a>
+                                    <a href="index.html#token">
+                                        令牌
+                                    </a>
+                                </div>
+                            </div>
+                        </el-col>
+                        <el-col :span="20">
+                            <div class="grid-content bg-purple-light">
+                                <el-row :gutter="20">
+                                    <el-col :span="12">
+                                        <div class="bingo_money touzi">
+                                            <div>当前投资所得</div>
+                                            <div>0 BINGO</div>
+                                        </div>
+                                    </el-col>
+                                    <el-col :span="12">
+                                        <div class="bingo_money tuijian">
+                                            <div>推荐计划所得</div>
+                                            <div>0 BINGO</div>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+
+
+                            </div>
+                        </el-col>
+
+                    </el-row>
+                </div>
+            </div>
+
+
+        </section>
+        <footer>
+            <div class="subscribe">
+                <div class="container">
+                    <h3>订阅</h3>
+
+                    <form id="sbs-form" action="/cn" method="post">
+                        <input type="hidden" name="_csrf-frontend" value="MdC5ChdHVK7WdhSivgAPZXQCOiI69pvZj6-bDmMYAIJjv9Q_Og8bzb8aYtv5RGcTMC9YRXTO95PByfplJlxZ4Q==">
+                        <div class="form-group field-subscribers-email required">
+
+                            <input type="text" id="subscribers-email" class="form-control" name="Subscribers[email]"
+                                placeholder="E-MAIL" aria-required="true">
+
+                            <div class="help-block"></div>
+                        </div> <input type="submit" class="" value="订阅">
+                    </form>
+                    <p class="subs_desc">输入您的电子邮件，以及时了解我们的所有新闻和更新</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer_right">
+                        <div class="footer_1">客服邮箱：<span>xxxx@163.com</span></div>
+                        <div class="social footer_2">
+                            <span>联系我们：</span>
+                            <a href="https://twitter.com/nrm_cash">
+                                <div>
+                                    <img src="./imgs/tw.png" alt="">
+                                </div>
+
+                            </a>
+                            <a href="https://twitter.com/nrm_cash">
+                                <div>
+                                    <img src="./imgs/fb.png" alt="">
+                                </div>
+                            </a>
+                            <a href="https://twitter.com/nrm_cash">
+                                <div>
+                                    <img src="./imgs/tg_cn.png" alt="">
+                                </div>
+                            </a>
+                            <a href="https://twitter.com/nrm_cash">
+                                <div>
+                                    <img src="./imgs/tg_en.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_left">
+                        <div class="footer_1">
+                            <a href="/cn">
+                                <img src="./imgs/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="footer_2 social">
+
+                            <a href="index.html">
+                                主页
+                            </a>
+                            <a href="index.html#product">
+                                产品
+                            </a>
+                            <a href="index.html#token">
+                                令牌
+                            </a>
+                            <a href="index.html#team">
+                                团队
+                            </a>
+                            <a href="index.html#cooperation">
+                                合作
+                            </a>
+                            <a target="_blank" href="https://t.me/NRM_kor">
+                                白皮书
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="./js/vue.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/element.js"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#main',
+            data: {
+                dayDiff: '',
+                hours: '',
+                minutes: '',
+                seconds: '',
+                loginActive: '',
+                registerActive: '',
+                resetActive: '',
+                progress_proportion_num: '23.5',
+                progress_proportion_num_width: { //实际金额位置
+                    left: ' calc(60% - 15px)'
+                },
+                progress_proportion_money: '2360600',
+                progress_proportion_money_width: { //实际金额位置
+                    left: ' calc(60% - 35px)'
+                },
+                progress_proportion_count: '60000000',
+                proportion_panel: { //实际进度颜色
+                    width: '60%'
+                },
+                progress_proportion_direction: { //实际进度箭头位置
+                    left: ' calc(60% - 10px)'
+                }
+            },
+            methods: {
+                timeFn: function (d1) {
+                    //如果时间格式是正确的，那下面这一步转化时间格式就可以不用了
+                    var dateBegin = new Date(d1.replace(/-/g, "/")); //将-转化为/，使用new Date
+                    var dateEnd = new Date(); //获取当前时间
+                    var dateDiff = dateEnd.getTime() - dateBegin.getTime(); //时间差的毫秒数
+                    var dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000)); //计算出相差天数
+                    var leave1 = dateDiff % (24 * 3600 * 1000) //计算天数后剩余的毫秒数
+                    var hours = Math.floor(leave1 / (3600 * 1000)) //计算出小时数
+                    //计算相差分钟数
+                    var leave2 = leave1 % (3600 * 1000) //计算小时数后剩余的毫秒数
+                    var minutes = Math.floor(leave2 / (60 * 1000)) //计算相差分钟数
+                    //计算相差秒数
+                    var leave3 = leave2 % (60 * 1000) //计算分钟数后剩余的毫秒数
+                    var seconds = Math.round(leave3 / 1000);
+                    this.dayDiff = dayDiff;
+                    this.hours = hours;
+                    this.minutes = minutes;
+                    this.seconds = seconds;
+                    // console.log(" 相差 " + dayDiff + "天 " + hours + "小时 " + minutes + " 分钟" + seconds + " 秒")
+                },
+                initCanvas: function () {
+                    //http://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html
+                    var canvas1 = document.getElementById("canvas1");
+                    var ctx1 = canvas1.getContext("2d")
+                    ctx1.lineWidth = 1;
+                    ctx1.strokeStyle = "rgba(255,255,255,0.5)";
+                    ctx1.beginPath();
+                    ctx1.moveTo(0, 18);
+                    ctx1.bezierCurveTo(62, 20, 87, 22, 99, 67);
+                    ctx1.stroke();
+
+                    var canvas2 = document.getElementById("canvas2");
+                    var ctx2 = canvas2.getContext("2d")
+                    ctx2.lineWidth = 1;
+                    ctx2.strokeStyle = "rgba(255,255,255,0.5)";
+                    ctx2.beginPath();
+                    ctx2.moveTo(0, 67);
+                    ctx2.bezierCurveTo(12, 22, 27, 20, 105, 18);
+                    ctx2.stroke();
+
+                    var canvas3 = document.getElementById("canvas3");
+                    var ctx3 = canvas3.getContext("2d")
+                    ctx3.lineWidth = 1;
+                    ctx3.strokeStyle = "rgba(255,255,255,0.5)";
+                    ctx3.moveTo(0, 0); //设置起点状态
+                    ctx3.lineTo(100, 0); //设置末端状态
+                    ctx3.stroke(); //进行绘制
+
+                    var canvas4 = document.getElementById("canvas4");
+                    var ctx4 = canvas4.getContext("2d")
+                    ctx4.lineWidth = 1;
+                    ctx4.strokeStyle = "rgba(255,255,255,0.5)";
+                    ctx4.moveTo(0, 0); //设置起点状态
+                    ctx4.lineTo(100, 0); //设置末端状态
+                    ctx4.stroke(); //进行绘制
+
+                    var canvas5 = document.getElementById("canvas5");
+                    var ctx5 = canvas5.getContext("2d")
+                    ctx5.lineWidth = 1;
+                    ctx5.strokeStyle = "rgba(255,255,255,0.5)";
+                    ctx5.beginPath();
+                    ctx5.moveTo(0, 67);
+                    ctx5.bezierCurveTo(63, 63, 103, 65, 113, 4);
+                    ctx5.stroke();
+
+                    var canvas6 = document.getElementById("canvas6");
+                    var ctx6 = canvas6.getContext("2d")
+                    ctx6.lineWidth = 1;
+                    ctx6.strokeStyle = "rgba(255,255,255,0.5)";
+                    ctx6.beginPath();
+                    ctx6.moveTo(0, 5);
+                    ctx6.bezierCurveTo(14, 84, 78, 65, 130, 66);
+                    ctx6.stroke();
+                },
+                outHide: function () {
+                    $('.team_item').hover(function () {
+                        $(".cover", this).stop().animate({
+                            top: '0px'
+                        }, {
+                            queue: false,
+                            duration: 500
+                        });
+                    }, function () {
+                        $(".cover", this).stop().animate({
+                            top: '360px'
+                        }, {
+                            queue: false,
+                            duration: 500
+                        });
+                    });
+                    var i = 0;
+                    $('.team_item').on("click", function () {
+                        if (i == 0) {
+                            i = 1;
+                            $(".cover", this).stop().animate({
+                                top: '0px'
+                            }, {
+                                queue: false,
+                                duration: 500
+                            });
+                        } else {
+                            i = 0;
+                            $(".cover", this).stop().animate({
+                                top: '360px'
+                            }, {
+                                queue: false,
+                                duration: 500
+                            });
+                        }
+                    })
+
+                },
+                /*包含带小数的数字处理,千位加逗号,分位保留,*/
+                formatNumldy: function (strNum) {
+                    var outputmoney = function (number) {
+                        number = number.replace(/\,/g, ""); //把所有的逗号，清除
+                        if (isNaN(number) || number == "") return "";
+                        number = Math.round(number * 100) / 100;
+                        if (number < 0)
+                            return '-' + outputdollars(Math.floor(Math.abs(number) - 0) + '') +
+                                outputcents(Math.abs(number) - 0);
+                        else
+                            return outputdollars(Math.floor(number - 0) + '');
+                    }
+                    //格式化金额
+                    var outputdollars = function (number) {
+                        if (number.length <= 3)
+                            return (number == '' ? '0' : number);
+                        else {
+                            var mod = number.length % 3;
+                            var output = (mod == 0 ? '' : (number.substring(0, mod)));
+                            for (i = 0; i < Math.floor(number.length / 3); i++) {
+                                if ((mod == 0) && (i == 0))
+                                    output += number.substring(mod + 3 * i, mod + 3 * i + 3);
+                                else
+                                    output += ' ' + number.substring(mod + 3 * i, mod + 3 * i + 3);
+                            }
+                            return (output);
+                        }
+                    }
+                    var outputcents = function (amount) {
+                        amount = Math.round(((amount) - Math.floor(amount)) * 100);
+                        return (amount < 10 ? '.0' + amount : '.' + amount);
+                    }
+                    return outputmoney(strNum + "");
+                },
+                showLogin: function () {
+                    this.loginActive = (this.loginActive ? '' : 'active');
+                    this.registerActive = '';
+                    this.resetActive = '';
+                },
+                showRegister: function () {
+                    this.registerActive = (this.registerActive ? '' : 'active');
+                    this.loginActive = '';
+                    this.resetActive = '';
+                },
+                showReset: function () {
+                    this.resetActive = (this.resetActive ? '' : 'active');
+                    this.registerActive = '';
+                    this.loginActive = '';
+                }
+
+
+            },
+            mounted: function () {
+                var self = this;
+                var t3 = "2018-08-26 04:56:38";
+                setInterval(function () {
+                    self.timeFn(t3)
+                }, 1000);
+
+                self.initCanvas();
+                self.outHide();
+
+                self.progress_proportion_money = this.formatNumldy(self.progress_proportion_money);
+                self.progress_proportion_count = this.formatNumldy(self.progress_proportion_count);
+            }
+
+        })
+    </script>
+</body>
+
+</html>

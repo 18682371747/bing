@@ -1,0 +1,93 @@
+header {
+    margin-bottom: 0;
+    padding-bottom: 16px;
+}
+
+.main_wrap {
+    background-size: cover;
+    margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+    clip-path: none;
+    -webkit-clip-path: none;
+    background: #1151cf;
+}
+
+footer {
+    background-image: linear-gradient(-180deg, #1151cf 0%, #1151cf 100%);
+    color: #fff;
+    padding: 30px 0 60px;
+    clip-path: none;
+    -webkit-clip-path: none;
+    margin-top: 0;
+}
+.left_username {
+    color: #1151cf;
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.left_username::after{
+    content: ' ';
+    height: 1px;
+    width: 90%;
+    display: block;
+    clear: both;
+    border-bottom: 1px solid #efefef;
+    margin: 0 auto;
+}
+.left_menu a {
+    display: block;
+    text-align: left;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 30px;
+}
+
+.left_menu {
+    padding-top: 20px;
+}
+.el-col {
+    border-radius: 4px;
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .bg-purple {
+    background: #fff;
+  }
+  .bg-purple-light {
+    background: #fff;
+  }
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+  .bingo_money {
+    background: #f09b00;
+    border-radius: 5px;
+    height: 100px;
+}
+
+
+
+.bingo_money div:first-child {
+    height: 50px;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.bingo_money div:first-child+div {
+    height: 50px;
+    text-align: right;
+    padding: 20px;
+}
+.bingo_money.touzi {
+    margin: 20px 0 20px 20px;
+}
+
+.bingo_money.tuijian {
+    margin: 20px 20px 20px 0;
+}
