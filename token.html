@@ -102,104 +102,94 @@
                             </div>
                         </el-col>
                         <el-col :span="20">
-                            <div class="grid-content bg-purple-light">
-                                <el-row :gutter="20">
-                                    <el-col :span="12">
-                                        <div class="bingo_money touzi">
-                                            <div>当前投资所得</div>
-                                            <div>0 BINGO</div>
-                                        </div>
-                                    </el-col>
-                                    <el-col :span="12">
-                                        <div class="bingo_money tuijian">
-                                            <div>推荐计划所得</div>
-                                            <div>0 BINGO</div>
-                                        </div>
-                                    </el-col>
-                                </el-row>
+                            <div class="grid-content bg-purple-light token">
+
                                 <el-row>
                                     <el-col :span="1">&nbsp;</el-col>
                                     <el-col :span="23" class="form_right_t r_t">
-                                        <h5>1</h5>
-                                        <div class="f_r_r_label">获取KYC验证</div>
+                                        <div class="f_r_r_label">KYC验证</div>
                                     </el-col>
                                 </el-row>
-                                <el-row class="data_row">
-                                    <el-col :span="1">&nbsp;</el-col>
-                                    <el-col :span="23" class="form_right_t r1">
-                                        <p class="line_s">&nbsp;</p>
-                                        <h4>* KYC验证</h4>
-                                        <p> 已提交验证，请等待审核</p>
-                                    </el-col>
-                                </el-row>
-                                <el-row>
-                                    <el-col :span="1">&nbsp;</el-col>
-                                    <el-col :span="23" class="form_right_t r_t">
-                                        <h5>2</h5>
-                                        <div class="f_r_r_label">添加钱包</div>
-                                    </el-col>
-                                </el-row>
+
                                 <el-row class="data_row ">
                                     <el-col :span="1">&nbsp;</el-col>
                                     <el-col :span="23" class="form_right_t r2">
-                                        <p class="line_s">&nbsp;</p>
-                                        <div style="display:inline-block;padding-left: 20px;">
-                                            <div class="r2_1">
-
-                                                <div style="display:inline-block;">
-                                                    <input type="text" id="loginform-email" value="ASDFADKFJHADFNXHGZHJDSAKFNASDKFHASDFHAJKSDNFKAJSDHFKASDVN"
-                                                        autofocus="autofocus" aria-required="true" class="form-control">
-                                                    <h4>添加</h4>
-                                                    <span style="display: block; margin-left: 30px;">提示：此钱包是您发送ETH的钱包地址，务必位公共钱包地址。</span>
-                                                </div>
-                                            </div>
-                                            <div class="r2_1">
-                                                <div style="display:inline-block;">
-                                                    <input type="text" id="loginform-email" value="ASDFADKFJHADFNXHGZHJDSAKFNASDKFHASDFHAJKSDNFKAJSDHFKASDVN"
-                                                        autofocus="autofocus" aria-required="true" class="form-control">
-                                                    <h4>添加</h4>
-                                                    <span style="display: block; margin-left: 30px;">提示：此钱包是您发送ETH的钱包地址，务必位公共钱包地址。</span>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </el-col>
-
-                                </el-row>
-                                <el-row>
-                                    <el-col :span="1">&nbsp;</el-col>
-                                    <el-col :span="23" class="form_right_t r_t">
-                                        <h5>3</h5>
-                                        <div class="f_r_r_label">购买BINGO</div>
-                                    </el-col>
-                                </el-row>
-                                <el-row class="data_row ">
-                                    <el-col :span="1">&nbsp;</el-col>
-                                    <el-col :span="23" class="form_right_t r2">
-                                        <p class="line_s">&nbsp;</p>
-                                        <div style="display:inline-block;padding-left: 40px;">
-                                            <div class="r2_1">
-                                                <div style="display:inline-block;">
-                                                    1 BINGO = 0.006 USD (本次 ICO 接收 ETH 以 Cryptocurrencles 实时价为准）
-                                                </div>
-                                            </div>
+                                        <div style="display:inline-block;">
                                             <div class="r2_1">
                                                 <div style="display:inline-block;">
                                                     <table width="100%">
                                                         <tr>
-                                                            <td>*USD</td>
-                                                            <td></td>
-                                                            <td>*BINGO</td>
+                                                            <td>*名：</td>
+                                                            <td>*姓：</td>
+                                                            <td>*出生年月：</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                    <input type="text" value="0.00"
-                                                                    autofocus="autofocus" aria-required="true" class="form-control">
+                                                                <input type="text" value="0.00" autofocus="autofocus" aria-required="true" class="form-control">
                                                             </td>
-                                                            <td>=</td>
+                                                            <td><input type="text" value="0.00" autofocus="autofocus" aria-required="true" class="form-control"></td>
                                                             <td>
-                                                                    <input type="text"  value="0.00"
-                                                                    autofocus="autofocus" aria-required="true" class="form-control">
+                                                                <input type="text" value="0.00" autofocus="autofocus" aria-required="true" class="form-control">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>手机号：</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="text" value="0.00" autofocus="autofocus" aria-required="true" class="form-control">
+                                                            </td>
+                                                            <td colspan="2"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>国家：</td>
+                                                            <td>地址：</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="text" value="0.00" autofocus="autofocus" aria-required="true" class="form-control">
+                                                            </td>
+                                                            <td colspan="2"><input type="text" value="0.00" autofocus="autofocus" aria-required="true" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>确认身份文件类型：</td>
+                                                            <td>填写身份文件号码：</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="text" value="0.00" autofocus="autofocus" aria-required="true" class="form-control">
+                                                            </td>
+                                                            <td colspan="2"><input type="text" value="0.00" autofocus="autofocus" aria-required="true" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>确认身份文件：</td>
+                                                            <td>确认身份脸部照片和文件：</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="shenfenzheng">
+                                                                    <img src="./imgs/tpkyc01.png" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="shenfenzheng">
+                                                                    <img src="./imgs/tpkyc02.png" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3">
+                                                                <div class="remark">
+                                                                    本申请中提供的所有信息都是完整和准确的。如果上述信息发生任何变化，他会立即通知NEUROMACHINE。<br> 同意则表示同意处理和存储您的个人资料。
+                                                                </div>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -210,19 +200,13 @@
                                     </el-col>
 
                                 </el-row>
-                                <el-row>
-                                        <el-col :span="1">&nbsp;</el-col>
-                                        <el-col :span="23" class="form_right_t r_t">
-                                            <h5>4</h5>
-                                            <div class="f_r_r_label">投资</div>
-                                        </el-col>
-                                    </el-row>
-                                    <el-row class="data_row">
-                                            <el-col :span="1">&nbsp;</el-col>
-                                            <el-col :span="23" class="form_right_t r4">
-                                                <h4>投资</h4>
-                                            </el-col>
-                                        </el-row>
+
+                                <el-row class="data_row">
+                                    <el-col :span="1">&nbsp;</el-col>
+                                    <el-col :span="23" class="form_right_t r4">
+                                        <h4>提交验证</h4>
+                                    </el-col>
+                                </el-row>
                             </div>
                         </el-col>
 
@@ -241,8 +225,7 @@
                         <input type="hidden" name="_csrf-frontend" value="MdC5ChdHVK7WdhSivgAPZXQCOiI69pvZj6-bDmMYAIJjv9Q_Og8bzb8aYtv5RGcTMC9YRXTO95PByfplJlxZ4Q==">
                         <div class="form-group field-subscribers-email required">
 
-                            <input type="text" id="subscribers-email" class="form-control" name="Subscribers[email]"
-                                placeholder="E-MAIL" aria-required="true">
+                            <input type="text" id="subscribers-email" class="form-control" name="Subscribers[email]" placeholder="E-MAIL" aria-required="true">
 
                             <div class="help-block"></div>
                         </div> <input type="submit" class="" value="订阅">
@@ -343,7 +326,7 @@
                 }
             },
             methods: {
-                timeFn: function (d1) {
+                timeFn: function(d1) {
                     //如果时间格式是正确的，那下面这一步转化时间格式就可以不用了
                     var dateBegin = new Date(d1.replace(/-/g, "/")); //将-转化为/，使用new Date
                     var dateEnd = new Date(); //获取当前时间
@@ -351,10 +334,10 @@
                     var dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000)); //计算出相差天数
                     var leave1 = dateDiff % (24 * 3600 * 1000) //计算天数后剩余的毫秒数
                     var hours = Math.floor(leave1 / (3600 * 1000)) //计算出小时数
-                    //计算相差分钟数
+                        //计算相差分钟数
                     var leave2 = leave1 % (3600 * 1000) //计算小时数后剩余的毫秒数
                     var minutes = Math.floor(leave2 / (60 * 1000)) //计算相差分钟数
-                    //计算相差秒数
+                        //计算相差秒数
                     var leave3 = leave2 % (60 * 1000) //计算分钟数后剩余的毫秒数
                     var seconds = Math.round(leave3 / 1000);
                     this.dayDiff = dayDiff;
@@ -363,7 +346,7 @@
                     this.seconds = seconds;
                     // console.log(" 相差 " + dayDiff + "天 " + hours + "小时 " + minutes + " 分钟" + seconds + " 秒")
                 },
-                initCanvas: function () {
+                initCanvas: function() {
                     //http://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html
                     var canvas1 = document.getElementById("canvas1");
                     var ctx1 = canvas1.getContext("2d")
@@ -417,15 +400,15 @@
                     ctx6.bezierCurveTo(14, 84, 78, 65, 130, 66);
                     ctx6.stroke();
                 },
-                outHide: function () {
-                    $('.team_item').hover(function () {
+                outHide: function() {
+                    $('.team_item').hover(function() {
                         $(".cover", this).stop().animate({
                             top: '0px'
                         }, {
                             queue: false,
                             duration: 500
                         });
-                    }, function () {
+                    }, function() {
                         $(".cover", this).stop().animate({
                             top: '360px'
                         }, {
@@ -434,7 +417,7 @@
                         });
                     });
                     var i = 0;
-                    $('.team_item').on("click", function () {
+                    $('.team_item').on("click", function() {
                         if (i == 0) {
                             i = 1;
                             $(".cover", this).stop().animate({
@@ -456,19 +439,19 @@
 
                 },
                 /*包含带小数的数字处理,千位加逗号,分位保留,*/
-                formatNumldy: function (strNum) {
-                    var outputmoney = function (number) {
-                        number = number.replace(/\,/g, ""); //把所有的逗号，清除
-                        if (isNaN(number) || number == "") return "";
-                        number = Math.round(number * 100) / 100;
-                        if (number < 0)
-                            return '-' + outputdollars(Math.floor(Math.abs(number) - 0) + '') +
-                                outputcents(Math.abs(number) - 0);
-                        else
-                            return outputdollars(Math.floor(number - 0) + '');
-                    }
-                    //格式化金额
-                    var outputdollars = function (number) {
+                formatNumldy: function(strNum) {
+                    var outputmoney = function(number) {
+                            number = number.replace(/\,/g, ""); //把所有的逗号，清除
+                            if (isNaN(number) || number == "") return "";
+                            number = Math.round(number * 100) / 100;
+                            if (number < 0)
+                                return '-' + outputdollars(Math.floor(Math.abs(number) - 0) + '') +
+                                    outputcents(Math.abs(number) - 0);
+                            else
+                                return outputdollars(Math.floor(number - 0) + '');
+                        }
+                        //格式化金额
+                    var outputdollars = function(number) {
                         if (number.length <= 3)
                             return (number == '' ? '0' : number);
                         else {
@@ -483,23 +466,23 @@
                             return (output);
                         }
                     }
-                    var outputcents = function (amount) {
+                    var outputcents = function(amount) {
                         amount = Math.round(((amount) - Math.floor(amount)) * 100);
                         return (amount < 10 ? '.0' + amount : '.' + amount);
                     }
                     return outputmoney(strNum + "");
                 },
-                showLogin: function () {
+                showLogin: function() {
                     this.loginActive = (this.loginActive ? '' : 'active');
                     this.registerActive = '';
                     this.resetActive = '';
                 },
-                showRegister: function () {
+                showRegister: function() {
                     this.registerActive = (this.registerActive ? '' : 'active');
                     this.loginActive = '';
                     this.resetActive = '';
                 },
-                showReset: function () {
+                showReset: function() {
                     this.resetActive = (this.resetActive ? '' : 'active');
                     this.registerActive = '';
                     this.loginActive = '';
@@ -507,10 +490,10 @@
 
 
             },
-            mounted: function () {
+            mounted: function() {
                 var self = this;
                 var t3 = "2018-08-26 04:56:38";
-                setInterval(function () {
+                setInterval(function() {
                     self.timeFn(t3)
                 }, 1000);
 
