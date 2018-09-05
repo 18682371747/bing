@@ -61,7 +61,7 @@ div#footer {
 .time_line {
     display: inline-block;
     width: 60px;
-    height: 70px;
+    height: 75px;
     text-align: center;
     background: #e28b00;
     border-radius: 5px;
@@ -79,6 +79,8 @@ div#footer {
 
 .time_line>div:last-child {
     font-size: 12px;
+    /* height: 24px; */
+    /* line-height: 20px; */
 }
 
 .time_content {

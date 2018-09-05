@@ -28,23 +28,27 @@
                             <ul class="nav">
 
                                 <li>
-                                    <a href="javascript:void(0);" id="btn_registration" class="btn btn_enter" @click="showLogin">登录</a>
+                                    <a href="javascript:void(0);" id="btn_registration" class="btn btn_enter" @click="showLogin">{{i18n.btn_1}}</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" id="btn_sign_in" class="btn btn_enter" @click="showRegister">注册</a>
+                                    <a href="javascript:void(0);" id="btn_sign_in" class="btn btn_enter" @click="showRegister">{{i18n.btn_2}}</a>
                                 </li>
 
                                 <div id="lang">
                                     <span id="current-lang">
-                                        cn
-                                        <span class="show-more-lang">▼</span>
+                                        <img class="lang_img" src="./imgs/china.png" alt="123" v-if="i18n_name == 'CN'">
+                                        <img class="lang_img" src="./imgs/usa.png" alt="312" v-if="i18n_name == 'EN'">
+                                        <span> {{i18n_name}}</span>
+                                    <span class="show-more-lang">▼</span>
                                     </span>
                                     <ul id="langs">
-                                        <li class="item-lang">
-                                            <a href="/en">en</a>
+                                        <li class="item-lang" @click="switchI18n('CN')">
+                                            <img class="lang_img" src="./imgs/china.png">
+                                            <a href="javascript:void(0);">CN</a>
                                         </li>
-                                        <li class="item-lang">
-                                            <a href="/ru">cn</a>
+                                        <li class="item-lang" @click="switchI18n('EN')">
+                                            <img class="lang_img" src="./imgs/usa.png">
+                                            <a href="javascript:void(0);">EN</a>
                                         </li>
 
                                     </ul>
@@ -53,45 +57,45 @@
                         </div>
                         <div class="social">
                             <a href="index.html">
-                                主页
+                                {{i18n.menu_1}}
                             </a>
-                            <a  href="index.html#product">
-                                产品
+                            <a href="index.html#product">
+                                    {{i18n.menu_2}}
                             </a>
-                            <a  href="index.html#token">
-                                令牌
+                            <a href="index.html#token">
+                                    {{i18n.menu_3}}
                             </a>
-                            <a  href="index.html#team">
-                                团队
+                            <a href="index.html#team">
+                                    {{i18n.menu_4}}
                             </a>
-                            <a  href="index.html#cooperation">
-                                合作
+                            <a href="index.html#cooperation">
+                                    {{i18n.menu_5}}
                             </a>
-                            <a target="_blank" href="https://t.me/NRM_kor">
-                                白皮书
+                            <a target="_blank" href="http://greeninnov.cn/%E5%B2%B3%E9%98%B3%E8%88%B9%E8%88%B6%E4%BA%A4%E6%98%93%E6%89%80%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88.pdf">
+                                {{i18n.menu_6}}
                             </a>
                         </div>
                         <div class="logo">
-                            <a href="/cn">
+                            <a href="index.html">
                                 <img src="./imgs/logo.png" alt="Logo">
                             </a>
                         </div>
                     </header>
                     <div class="main_title" data-aos="fade-right">
                         <h1>Bing</h1>
-                        <p class="under_h1">Bing平台也是全球首家基于互联网终端共享云计算的去中心数字资产交易平台，同时致力于打造全球第一家真正意义上的可以随时随地携带的数字资产交易百宝箱，完美结合中心化交易所的高性能和去中心化公链高可靠性的优点。</p>
+                        <p class="under_h1">{{i18n.title_7}}</p>
                         <p class="course">1 BINGO = 0.012 USD</p>
-                        <p class="min-max-inves">本次ICO只接收ETH，以WWW.BINANCE.COM实时价格为准</p>
+                        <p class="min-max-inves">{{i18n.title_8}}</p>
                         <a href="/en/cabinet" class="btn main_btn">Invest</a>
-                        <p class="min-max-inves">前300位白名单，奖励10% BINGO！</p>
+                        <p class="min-max-inves">{{i18n.title_10}}</p>
                         <div class="social1">
-                            <a href="https://twitter.com/nrm_cash">
+                            <a target="_blank" href="https://www.twitter.com">
                                 <div>
                                     <img src="./imgs/tw.png" alt="">
                                 </div>
 
                             </a>
-                            <a href="https://twitter.com/nrm_cash">
+                            <a target="_blank" href="https://www.facebook.com">
                                 <div>
                                     <img src="./imgs/fb.png" alt="">
                                 </div>
@@ -112,23 +116,23 @@
                         <div class="skew count_skew"></div>
                         <div class="count_wrap time">
                             <div class="time_content">
-                                <div class="time1">售前已开始</div>
+                                <div class="time1">{{i18n.title_1}}</div>
                                 <div class="time2">
                                     <div class="days time_line">
                                         <div>{{dayDiff}}</div>
-                                        <div>DAYS</div>
+                                        <div>{{i18n.title_2}}</div>
                                     </div>
                                     <div class="hours time_line">
                                         <div>{{hours}}</div>
-                                        <div>HOURS</div>
+                                        <div>{{i18n.title_3}}</div>
                                     </div>
                                     <div class="minutes time_line">
                                         <div>{{minutes}}</div>
-                                        <div>MINS</div>
+                                        <div>{{i18n.title_4}}</div>
                                     </div>
                                     <div class="seconds time_line">
                                         <div>{{seconds}}</div>
-                                        <div>SECS</div>
+                                        <div>{{i18n.title_5}}</div>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +141,7 @@
                         </div>
                         <div class="count_wrap count_progress">
                             <div class="count_progress_content">
-                                <div class="progress_title">当前状态：</div>
+                                <div class="progress_title">{{i18n.title_6}}</div>
                                 <div class="proportion_content">
 
                                     <div class="progress_proportion_num" :style="progress_proportion_num_width">{{progress_proportion_num}}%</div>
@@ -149,7 +153,7 @@
                                 <div class="proportion_layout">
                                     <div class="proportion_panel" :style="proportion_panel"></div>
                                 </div>
-                                <div class="progress_proportion_count">ICO数量 {{progress_proportion_count}} BINGO</div>
+                                <div class="progress_proportion_count">{{i18n.title_9}} {{progress_proportion_count}} BINGO</div>
                             </div>
                         </div>
                     </div>
@@ -157,9 +161,9 @@
             </div>
             <div class="idea_wrap" id="product">
                 <div class="container">
-                    <h2 data-aos="fade-up">平台产品</h2>
-                    <p data-aos="fade-up">本平台将打造一个超级数字货币交易所，实现包含O2O、P2P等创新交易融资模式。</p>
-                    <p data-aos="fade-up">本平台秉承“交易所就是用户等钱包”这一服务宗旨，在平台中用户可以随时交易轻松变现。</p>
+                    <h2 data-aos="fade-up">{{i18n.m_title_1}}</h2>
+                    <p data-aos="fade-up">{{i18n.m_title_1_1}}</p>
+                    <p data-aos="fade-up">{{i18n.m_title_1_2}}</p>
                     <img src="./imgs/product.png" alt="Idea" class="img_idea" data-aos="fade-up">
                     <div class="idea_skew_wrap">
                         <div class="skew idea_skew"></div>
@@ -168,8 +172,8 @@
             </div>
             <div class="idea_wrap product_wrap">
                 <div class="container">
-                    <h2 data-aos="fade-up">产品展示</h2>
-                    <p data-aos="fade-up">本平台等用户终端（包括电脑、手机、平板电脑等）可以分享终端设备等资源，将其作为P2P云计算等节点。</p>
+                    <h2 data-aos="fade-up">{{i18n.m_title_2}}</h2>
+                    <p data-aos="fade-up">{{i18n.m_title_2_1}}</p>
                     <div class="product_wrap_img">
                         <div class="img_computer">
                             <img src="./imgs/p_computer.png" alt="Idea" class="img_idea " data-aos="fade-up">
@@ -189,40 +193,40 @@
             </div>
             <div class="idea_wrap terrace_wrap">
                 <div class="container">
-                    <h2 data-aos="fade-up">平台优势</h2>
+                    <h2 data-aos="fade-up">{{i18n.m_title_3}}</h2>
                     <div class="clearfix">
                         <div class="neuro_block_1">
                             <div class="neuro_item neuro_item_1" data-aos="fade-right">
-                                <h4>世界级金融级别的交易架构</h4>
-                                <p>基于先进的内存撮合算法、异步非阻塞读写、分布式实时消息框架，集群负载均衡等先进技术实现系统等高可靠性、高性能、强安全性、可扩展性及易维护性。</p>
+                                <h4>{{i18n.m_title_3_1}}</h4>
+                                <p>{{i18n.m_title_3_2}}</p>
                                 <canvas id="canvas1" width="100" height="120"></canvas>
                             </div>
                             <div class="neuro_item neuro_item_2" data-aos="fade-right">
-                                <h4>多重可靠性云算法，支持平台通证挖矿运算</h4>
-                                <p>基于先进的内存撮合算法、异步非阻塞读写、分布式实时消息框架，集群负载均衡等先进技术实现系统等高可靠性、高性能、强安全性、可扩展性及易维护性。</p>
+                                <h4></h4>
+                                <p>{{i18n.m_title_3_4}}</p>
                                 <canvas id="canvas3" width="68" height="1"></canvas>
                             </div>
                             <div class="neuro_item neuro_item_3" data-aos="fade-right">
-                                <h4>人工智能团队</h4>
-                                <p>凭借数据科学专家的预测性分析，建立模型。对投资人钱包对持仓及投资进行历史性回归分析，通过高频自主分析提供可靠的投资建议。</p>
+                                <h4>{{i18n.m_title_3_5}}</h4>
+                                <p>{{i18n.m_title_3_6}}</p>
                                 <canvas id="canvas5" width="120" height="120"></canvas>
                             </div>
                         </div>
                         <div class="neuro_block_2">
                             <div class="neuro_item neuro_item_4" data-aos="fade-left">
                                 <canvas id="canvas2" width="120" height="120"></canvas>
-                                <h4>对等化，标准化的硬件支持</h4>
-                                <p>基于先进的内存撮合算法、异步非阻塞读写、分布式实时消息框架，集群负载均衡等先进技术实现系统等高可靠性、高性能、强安全性、可扩展性及易维护性。</p>
+                                <h4>{{i18n.m_title_3_7}}</h4>
+                                <p>{{i18n.m_title_3_8}}</p>
                             </div>
                             <div class="neuro_item neuro_item_5" data-aos="fade-left">
                                 <canvas id="canvas4" width="70" height="1"></canvas>
-                                <h4>与世界级的安全公司合作，立体防护体系</h4>
-                                <p>上线前对全站代码进行代码审计。架设多级防火墙，实时监控系统数据异常。在用户资产上，采用多重签名及冷热隔离的钱包方案，最大程度保障用户资产安全。</p>
+                                <h4>{{i18n.m_title_3_9}}</h4>
+                                <p>{{i18n.m_title_3_10}}</p>
                             </div>
                             <div class="neuro_item neuro_item_6" data-aos="fade-left">
                                 <canvas id="canvas6" width="120" height="120"></canvas>
-                                <h4>丰富的投资理财模式</h4>
-                                <p>系统提供用户资产理财功能，比如POS节点、搬砖套利、矿机挖矿机P2P借贷，用户可以通过自己的风险偏好选择。</p>
+                                <h4>{{i18n.m_title_3_11}}</h4>
+                                <p>{{i18n.m_title_3_12}}</p>
                             </div>
                         </div>
                     </div>
@@ -231,84 +235,82 @@
             <div class="idea_wrap user_wrap">
                 <div class="container">
                     <div class="earn_wrap clearfix">
-                        <h2 data-aos="fade-up">用户获利</h2>
+                        <h2 data-aos="fade-up">{{i18n.m_title_4}}</h2>
                         <div class="earn_item" data-aos="fade-right">
                             <div class="earn_img">
                                 <img src="./imgs/earn_1.png" alt="Earn">
                             </div>
-                            <p class="earn_question">交易即挖矿</p>
-                            <p>所有在本平台持有Bingo的用户都可以每日享受平台手续费收入的100%分红。Bing平台采用“交易挖矿”的形式产生，用户进行交易即参与挖矿，则被视为“旷工”，即可享受分红。</p>
+                            <p class="earn_question">{{i18n.m_title_4_1}}</p>
+                            <p>{{i18n.m_title_4_2}}</p>
                         </div>
                         <div class="earn_item" data-aos="fade-up">
                             <div class="earn_img">
                                 <img src="./imgs/earn_2.png" alt="Earn">
                             </div>
-                            <p class="earn_question">终端云计算</p>
-                            <p>终端机将直接作为矿机，在使用时将一部分剩余资源进行挖矿计算。终端程序作为云服务商等一个终端节点，将一部分云计算服务商等应用收益通过平台通证等形式返还用户。</p>
+                            <p class="earn_question">{{i18n.m_title_4_3}}</p>
+                            <p>{{i18n.m_title_4_4}}</p>
                         </div>
                         <div class="earn_item" data-aos="fade-left">
                             <div class="earn_img">
                                 <img src="./imgs/earn_3.png" alt="Earn">
                             </div>
-                            <p class="earn_question">理财和借贷</p>
-                            <p>本平台还将推出数字理财，算力买买，借贷，其他金融产品投资等功能将会给用户带来方便等理财体验。同时对用户进行平台内独立对征信评级，从不同维度，维护广大参与者对利益，同时也丰富了用户对获利渠道。</p>
+                            <p class="earn_question">{{i18n.m_title_4_5}}</p>
+                            <p>{{i18n.m_title_4_6}}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="idea_wrap db_wrap" id="token">
                 <div class="container">
-                    <h2 data-aos="fade-up">BINGO 代币</h2>
-                    <p data-aos="fade-up">Bingo Token是Bing
-                        交易平台，为解决ERC20标准无法通过接受方合同处理传入对交易，推行对基于以太坊ERC223标准Token,发行总量2亿个Bingo通证，永不增发。
-                    </p>
+                    <h2 data-aos="fade-up">{{i18n.m_title_5}}</h2>
+                    <p data-aos="fade-up">{{i18n.m_title_5_1}}</p>
                     <div class="table">
                         <table>
                             <tbody>
                                 <tr>
-                                    <td>Token symbol</td>
+                                    <td>{{i18n.m_title_5_2}}</td>
                                     <td>NRM</td>
                                 </tr>
                                 <tr>
-                                    <td>Token standart</td>
+                                    <td>{{i18n.m_title_5_3}}</td>
                                     <td>Ethereum ERC-20</td>
                                 </tr>
                                 <tr>
-                                    <td>Token price</td>
+                                    <td>{{i18n.m_title_5_4}}</td>
                                     <td>1 NRM = 0,036 USDT</td>
                                 </tr>
                                 <tr>
-                                    <td>Total token supply</td>
+                                    <td>{{i18n.m_title_5_5}}</td>
                                     <td>4 958 333 333 NRM</td>
                                 </tr>
                                 <tr>
-                                    <td>Hard Cap</td>
+                                    <td>{{i18n.m_title_5_6}}</td>
                                     <td>65 000 000 USDT</td>
                                 </tr>
                                 <tr>
-                                    <td>Token supply for sale</td>
+                                    <td>{{i18n.m_title_5_7}}</td>
                                     <td>2 975 000 000 NRM</td>
                                 </tr>
                                 <tr>
-                                    <td>Accepted crypto-currency</td>
+                                    <td>{{i18n.m_title_5_8}}</td>
                                     <td>BTC, BTH, BTG, ETH, ETC, LTC, DASH</td>
                                 </tr>
                                 <tr>
-                                    <td>Bounty program on sale stage</td>
+                                    <td>{{i18n.m_title_5_9}}</td>
                                     <td>2 500 000 NRM</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p class="commit">* All unsold tokens will be burned in proportion to each part</p>
+                        <!-- <p class="commit">* All unsold tokens will be burned in proportion to each part</p> -->
                     </div>
                     <div class="db_wrap_item" data-aos="fade-up">
-                        <h3>代币分配</h3>
+                        <h3>{{i18n.m_title_5_10}}</h3>
                         <div class="earn_img">
                             <img src="./imgs/tpdb.png" alt="Earn">
                         </div>
                     </div>
                     <div class="db_wrap_item" data-aos="fade-up">
-                        <h3>ICO分配</h3>
+                        <h3>{{i18n.m_title_5_11}}</h3>
                         <div class="earn_img">
                             <img src="./imgs/tpICO.png" alt="Earn">
                         </div>
@@ -317,38 +319,33 @@
             </div>
             <div class="idea_wrap map_team">
                 <div class="container">
-                    <h2 data-aos="fade-up">发展线路</h2>
+                    <h2 data-aos="fade-up">{{i18n.m_title_6}}</h2>
                     <div class="roadmap">
                         <div class="roadmap_block_1" data-aos="fade-left">
-                            <div class="map_year ">2017/10</div>
+                            <div class="map_year " v-html="i18n.m_title_6_1"></div>
                             <div class="map_step future first">
-                                <div class="step_month">产品概念设计</div>
-                                <div class="step_title"> 2017/10</div>
+                                <div class="step_month" v-html="i18n.m_title_6_2"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_3"></div>
                             </div>
                             <div class="map_step future">
-                                <div class="step_month">启动立项与
-                                    <br>前期市场调研</div>
-                                <div class="step_title">2018/01</div>
+                                <div class="step_month" v-html="i18n.m_title_6_4"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_5"></div>
                             </div>
                             <div class="map_step future">
-                                <div class="step_month">项目技术可行性论证
-                                    <br>与相关理财产品设计</div>
-                                <div class="step_title">2018/05</div>
+                                <div class="step_month" v-html="i18n.m_title_6_6"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_7"></div>
                             </div>
                             <div class="map_step future">
-                                <div class="step_month">白皮书撰写
-                                    <br>与架构搭建</div>
-                                <div class="step_title">2018/06</div>
+                                <div class="step_month" v-html="i18n.m_title_6_8"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_9"></div>
                             </div>
                             <div class="map_step current">
-                                <div class="step_month">启动ICO
-                                    <br>与项目实施</div>
-                                <div class="step_title">2018/09</div>
+                                <div class="step_month" v-html="i18n.m_title_6_10"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_11"></div>
                             </div>
                             <div class="map_step future">
-                                <div class="step_month">软硬件获利
-                                    <br>孵化接口开放</div>
-                                <div class="step_title">2018/11</div>
+                                <div class="step_month" v-html="i18n.m_title_6_12"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_13"></div>
                             </div>
                         </div>
                         <div class="roadmap_block_2" data-aos="fade-right">
@@ -356,30 +353,24 @@
                         </div>
                         <div class="roadmap_block_3" data-aos="fade-left">
                             <div class="map_step future">
-                                <div class="step_month">交易所上线
-                                    <br>开放主流交易品种
-                                    <br>推广用户、
-                                    <br>开展交易即挖矿</div>
-                                <div class="step_title">2018/12</div>
+                                <div class="step_month" v-html="i18n.m_title_6_14"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_15"></div>
                             </div>
                             <div class="map_step future">
-                                <div class="step_month">移动客户端挖矿
-                                    <br>与云计算服务获利</div>
-                                <div class="step_title">2019/01</div>
+                                <div class="step_month" v-html="i18n.m_title_6_16"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_17"></div>
                             </div>
                             <div class="map_step current">
-                                <div class="step_month">用户评级与
-                                    <br>借贷功能上线</div>
-                                <div class="step_title">2019/02</div>
+                                <div class="step_month" v-html="i18n.m_title_6_18"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_19"></div>
                             </div>
                             <div class="map_step future">
-                                <div class="step_month">理财产品（黄金，
-                                    <br>债权，期权等功能上线）</div>
-                                <div class="step_title">2019/03</div>
+                                <div class="step_month" v-html="i18n.m_title_6_20"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_21"></div>
                             </div>
                             <div class="map_step future">
-                                <div class="step_month">理财智能分析系统上线</div>
-                                <div class="step_title">2019/04</div>
+                                <div class="step_month" v-html="i18n.m_title_6_22"></div>
+                                <div class="step_title" v-html="i18n.m_title_6_23"></div>
                             </div>
                         </div>
                     </div>
@@ -387,101 +378,15 @@
             </div>
             <div class="idea_wrap team_wrap" id="team">
                 <div class="container">
-                    <h2 data-aos="fade-up">团队建设</h2>
+                    <h2 data-aos="fade-up">{{i18n.m_title_7}}</h2>
                     <div class="team">
-                        <div class="team_item" data-aos="fade-up">
-                            <img src="./imgs/user/01.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position"> 执行经理<br>创业者</div>
+                        <div class="team_item" data-aos="fade-up" v-for="item in teamList">
+                            <img :src="item.img" :alt="item.name">
+                            <div class="team_name">{{item.name}}</div>
+                            <div class="team_position" v-html="item.title"></div>
                             <a href="javascript:void(0);" target="_blank">
                                 <div class="cover boxcaptionY" style="top: 360px;" ref="majorText">
-                                    <p>Dmitry
-                                        Kochin拥有丰富等IT经验，并且是技术科学博士。自2005年以来一直从事IT行业等连续创业者。他参与了各种软件项目，设计在线游戏中等支付处理，账户聚合，计算机电话甚至金融服务。自2014年以来，他专心研究区块链和加密货币问题。
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="team_item" data-aos="fade-up">
-                            <img src="./imgs/user/02.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position"> 执行经理<br>创业者</div>
-                            <a href="javascript:void(0);" target="_blank">
-                                <div class="cover boxcaptionY" style="top: 360px;" ref="majorText">
-                                    <p>Dmitry
-                                        Kochin拥有丰富等IT经验，并且是技术科学博士。自2005年以来一直从事IT行业等连续创业者。他参与了各种软件项目，设计在线游戏中等支付处理，账户聚合，计算机电话甚至金融服务。自2014年以来，他专心研究区块链和加密货币问题。
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="team_item" data-aos="fade-up">
-                            <img src="./imgs/user/03.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position"> 执行经理<br>创业者</div>
-                            <a href="javascript:void(0);" target="_blank">
-                                <div class="cover boxcaptionY" style="top: 360px;" ref="majorText">
-                                    <p>Dmitry
-                                        Kochin拥有丰富等IT经验，并且是技术科学博士。自2005年以来一直从事IT行业等连续创业者。他参与了各种软件项目，设计在线游戏中等支付处理，账户聚合，计算机电话甚至金融服务。自2014年以来，他专心研究区块链和加密货币问题。
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="team_item" data-aos="fade-up">
-                            <img src="./imgs/user/04.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position"> 执行经理<br>创业者</div>
-                            <a href="javascript:void(0);" target="_blank">
-                                <div class="cover boxcaptionY" style="top: 360px;" ref="majorText">
-                                    <p>Dmitry
-                                        Kochin拥有丰富等IT经验，并且是技术科学博士。自2005年以来一直从事IT行业等连续创业者。他参与了各种软件项目，设计在线游戏中等支付处理，账户聚合，计算机电话甚至金融服务。自2014年以来，他专心研究区块链和加密货币问题。
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="team_item" data-aos="fade-up">
-                            <img src="./imgs/user/05.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position"> 执行经理<br>创业者</div>
-                            <a href="javascript:void(0);" target="_blank">
-                                <div class="cover boxcaptionY" style="top: 360px;" ref="majorText">
-                                    <p>Dmitry
-                                        Kochin拥有丰富等IT经验，并且是技术科学博士。自2005年以来一直从事IT行业等连续创业者。他参与了各种软件项目，设计在线游戏中等支付处理，账户聚合，计算机电话甚至金融服务。自2014年以来，他专心研究区块链和加密货币问题。
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="team_item" data-aos="fade-up">
-                            <img src="./imgs/user/06.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position"> 执行经理<br>创业者</div>
-                            <a href="javascript:void(0);" target="_blank">
-                                <div class="cover boxcaptionY" style="top: 360px;" ref="majorText">
-                                    <p>Dmitry
-                                        Kochin拥有丰富等IT经验，并且是技术科学博士。自2005年以来一直从事IT行业等连续创业者。他参与了各种软件项目，设计在线游戏中等支付处理，账户聚合，计算机电话甚至金融服务。自2014年以来，他专心研究区块链和加密货币问题。
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="team_item" data-aos="fade-up">
-                            <img src="./imgs/user/07.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position"> 执行经理<br>创业者</div>
-                            <a href="javascript:void(0);" target="_blank">
-                                <div class="cover boxcaptionY" style="top: 360px;" ref="majorText">
-                                    <p>Dmitry
-                                        Kochin拥有丰富等IT经验，并且是技术科学博士。自2005年以来一直从事IT行业等连续创业者。他参与了各种软件项目，设计在线游戏中等支付处理，账户聚合，计算机电话甚至金融服务。自2014年以来，他专心研究区块链和加密货币问题。
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="team_item" data-aos="fade-up">
-                            <img src="./imgs/user/08.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position"> 执行经理<br>创业者</div>
-                            <a href="javascript:void(0);" target="_blank">
-                                <div class="cover boxcaptionY" style="top: 360px;" ref="majorText">
-                                    <p>Dmitry
-                                        Kochin拥有丰富等IT经验，并且是技术科学博士。自2005年以来一直从事IT行业等连续创业者。他参与了各种软件项目，设计在线游戏中等支付处理，账户聚合，计算机电话甚至金融服务。自2014年以来，他专心研究区块链和加密货币问题。
-                                    </p>
+                                    <p v-html="item.introduced"></p>
                                 </div>
                             </a>
                         </div>
@@ -491,71 +396,28 @@
             </div>
             <div class="idea_wrap consult_wrap">
                 <div class="container">
-                    <h2 data-aos="fade-up">投资顾问</h2>
+                    <h2 data-aos="fade-up">{{i18n.m_title_8}}</h2>
                     <div class="team">
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/user/09.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
-
+                        <div class="team_item1" data-aos="fade-up" v-for="item in consultList">
+                            <img :src="item.img" :alt="item.name">
+                            <div class="team_name">{{item.name}}</div>
+                            <div class="team_position1" v-html="item.introduced"></div>
                         </div>
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/user/10.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
-
-                        </div>
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/user/11.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
-
-                        </div>
-
-
                     </div>
                 </div>
             </div>
             <div class="idea_wrap mentions_wrap">
                 <div class="container">
-                    <h2 data-aos="fade-up">合作伙伴</h2>
+                    <h2 data-aos="fade-up">{{i18n.m_title_9}}</h2>
                     <div class="team">
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/hz01.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
-
+                        <div class="team_item1" data-aos="fade-up" v-for="item in partnerList">
+                            <a :href="item.url ? item.url : 'javascript:void(0);'" target="_blank">
+                                <img :src="item.img" :alt="item.name">
+                            </a>
+                            <div class="team_name">{{item.name}}</div>
+                            <div class="team_position1" v-html="item.introduced"></div>
                         </div>
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/hz02.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
 
-                        </div>
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/hz03.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
-
-                        </div>
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/hz04.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
-
-                        </div>
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/hz05.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
-
-                        </div>
-                        <div class="team_item1" data-aos="fade-up">
-                            <img src="./imgs/hz05.png" alt="Valentin Korsunsky">
-                            <div class="team_name">Valentin Korsunsky</div>
-                            <div class="team_position1"> 区块链技术初创公司的先驱投资者，是一家总部位于伦敦的区块链风险投资商和投资者，负责自主和管理早起区块链技术公司的发展</div>
-
-                        </div>
 
 
                     </div>
@@ -563,37 +425,10 @@
             </div>
             <div class="idea_wrap news_wrap" id="cooperation">
                 <div class="container">
-                    <h2 data-aos="fade-up">合作伙伴</h2>
+                    <h2 data-aos="fade-up">{{i18n.m_title_10}}</h2>
                     <div class="team">
-                        <div class="team_item2" data-aos="fade-up">
-                            <img src="./imgs/mt01.png" alt="Valentin Korsunsky">
-
-                        </div>
-                        <div class="team_item2" data-aos="fade-up">
-                            <img src="./imgs/mt02.png" alt="Valentin Korsunsky">
-
-                        </div>
-                        <div class="team_item2" data-aos="fade-up">
-                            <img src="./imgs/mt03.png" alt="Valentin Korsunsky">
-
-                        </div>
-                        <div class="team_item2" data-aos="fade-up">
-                            <img src="./imgs/mt04.png" alt="Valentin Korsunsky">
-
-                        </div>
-                        <div class="team_item2" data-aos="fade-up">
-                            <img src="./imgs/mt05.png" alt="Valentin Korsunsky">
-
-                        </div>
-                        <div class="team_item2" data-aos="fade-up">
-                            <img src="./imgs/mt05.png" alt="Valentin Korsunsky">
-                        </div>
-                        <div class="team_item2" data-aos="fade-up">
-                            <img src="./imgs/mt05.png" alt="Valentin Korsunsky">
-
-                        </div>
-                        <div class="team_item2" data-aos="fade-up">
-                            <img src="./imgs/mt05.png" alt="Valentin Korsunsky">
+                        <div class="team_item2" data-aos="fade-up" v-for="item in newsList">
+                            <a :href="item.url ? item.url : 'javascript:void(0);'" target="_blank"> <img :src="item.img ? item.img : './imgs/mt05.png'"></a>
                         </div>
 
 
@@ -604,34 +439,26 @@
         <footer>
             <div class="subscribe">
                 <div class="container">
-                    <h3>订阅</h3>
+                    <h3>{{i18n.m_title_11}}</h3>
 
-                    <form id="sbs-form" action="/cn" method="post">
-                        <input type="hidden" name="_csrf-frontend" value="MdC5ChdHVK7WdhSivgAPZXQCOiI69pvZj6-bDmMYAIJjv9Q_Og8bzb8aYtv5RGcTMC9YRXTO95PByfplJlxZ4Q==">
-                        <div class="form-group field-subscribers-email required">
-
-                            <input type="text" id="subscribers-email" class="form-control" name="Subscribers[email]"
-                                placeholder="E-MAIL" aria-required="true">
-
-                            <div class="help-block"></div>
-                        </div> <input type="submit" class="" value="订阅">
-                    </form>
-                    <p class="subs_desc">输入您的电子邮件，以及时了解我们的所有新闻和更新</p>
+                    <input type="email" id="subscribers-email" class="form-control" placeholder="E-MAIL" aria-required="true" v-model="email">
+                    <a href="javascript:void(0);" class="btn main_btn" @click="subEamil">{{i18n.btn_6}}</a>
+                    <p class="subs_desc">{{i18n.m_title_11_1}}</p>
                 </div>
             </div>
             <div class="footer">
                 <div class="container">
                     <div class="footer_right">
-                        <div class="footer_1">客服邮箱：<span>xxxx@163.com</span></div>
+                        <div class="footer_1">{{i18n.m_title_11_2}}<span><a :href="'mailto:'+i18n.m_title_11_4">{{i18n.m_title_11_4}}</a></span></div>
                         <div class="social footer_2">
-                            <span>联系我们：</span>
-                            <a href="https://twitter.com/nrm_cash">
+                            <span>{{i18n.m_title_11_3}}</span>
+                            <a target="_blank" href="https://www.twitter.com">
                                 <div>
                                     <img src="./imgs/tw.png" alt="">
                                 </div>
 
                             </a>
-                            <a href="https://twitter.com/nrm_cash">
+                            <a target="_blank" href="https://www.facebook.com">
                                 <div>
                                     <img src="./imgs/fb.png" alt="">
                                 </div>
@@ -650,29 +477,29 @@
                     </div>
                     <div class="footer_left">
                         <div class="footer_1">
-                            <a href="/cn">
+                            <a href="index.html">
                                 <img src="./imgs/logo.png" alt="Logo">
                             </a>
                         </div>
                         <div class="footer_2 social">
 
                             <a href="index.html">
-                                主页
+                                    {{i18n.menu_1}}
                             </a>
-                            <a  href="index.html#product">
-                                产品
+                            <a href="index.html#product">
+                                    {{i18n.menu_2}}
                             </a>
-                            <a  href="index.html#token">
-                                令牌
+                            <a href="index.html#token">
+                                    {{i18n.menu_3}}
                             </a>
-                            <a  href="index.html#team">
-                                团队
+                            <a href="index.html#team">
+                                    {{i18n.menu_4}}
                             </a>
-                            <a  href="index.html#cooperation">
-                                合作
+                            <a href="index.html#cooperation">
+                                    {{i18n.menu_5}}
                             </a>
-                            <a target="_blank" href="https://t.me/NRM_kor">
-                                白皮书
+                            <a target="_blank" href="http://greeninnov.cn/%E5%B2%B3%E9%98%B3%E8%88%B9%E8%88%B6%E4%BA%A4%E6%98%93%E6%89%80%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88.pdf">
+                                {{i18n.menu_6}}
                             </a>
                         </div>
                     </div>
@@ -688,22 +515,20 @@
                     <div class="sign_left_title">数字货币交易百宝箱</div>
                 </div>
                 <div class="sign_right">
-                    <form >
+                    <form>
                         <h3> 登录</h3>
                         <div class="form-group field-loginform-email required">
-                            <label class="control-label" for="loginform-email">电子邮件</label>
-                            <input type="text" id="loginform-email" class="form-control" placeholder="请填写电子邮件" 
-                                autofocus="" aria-required="true">
-                            <p class="help-block help-block-error"></p>
+                            <label class="control-label">电子邮件</label>
+                            <input type="text" class="form-control" placeholder="请填写电子邮件" v-model="login.email">
+                            <p class="help-block help-block-error">{{validata.loginform.email}}</p>
                         </div>
                         <div class="form-group field-loginform-password required">
-                            <label class="control-label" for="loginform-password">密码</label>
-                            <input type="password" id="loginform-password" class="form-control" placeholder="请设置8-16位字符或数字密码" name="LoginForm[password]"
-                                aria-required="true">
-                            <p class="help-block help-block-error"></p>
+                            <label class="control-label">密码</label>
+                            <input type="password" class="form-control" placeholder="请设置8-16位字符或数字密码" v-model="login.pwd">
+                            <p class="help-block help-block-error">{{validata.loginform.pwd}}</p>
                         </div>
-                        <input type="submit" class="" value="登录">
-                        <a  href="javascript:void(0);" class="sign_register" @click="showRegister">注册</a>
+                        <input type="button" class="form_btn" value="登录" @click="login">
+                        <a href="javascript:void(0);" class="sign_register" @click="showRegister">注册</a>
                         <a class="forgot_pass" href="javascript:void(0);" @click="showReset">找回密码</a>
                     </form>
                     <div class="modal_close" @click="showLogin"></div>
@@ -725,32 +550,28 @@
 
                         <div class="form-group field-loginform-email required">
                             <label class="control-label" for="loginform-email">电子邮件</label>
-                            <input type="text" id="register-email" class="form-control" placeholder="请填写电子邮件" name="LoginForm[email]"
-                                autofocus="" aria-required="true">
+                            <input type="text" id="register-email" class="form-control" placeholder="请填写电子邮件" name="LoginForm[email]" autofocus="" aria-required="true">
 
                             <p class="help-block help-block-error"></p>
                         </div>
                         <div class="form-group field-loginform-password required">
                             <label class="control-label" for="loginform-password">设置密码</label>
-                            <input type="password" id="register-password" class="form-control" placeholder="请设置8-16位字符或数字密码" 
-                                aria-required="true">
+                            <input type="password" id="register-password" class="form-control" placeholder="请设置8-16位字符或数字密码" aria-required="true">
 
                             <p class="help-block help-block-error"></p>
                         </div>
                         <div class="form-group field-loginform-password required">
                             <label class="control-label" for="loginform-password">验证码</label>
-                            <input type="password" id="register-code" class="form-control" placeholder="请填写验证码"
-                                aria-required="true">
-
+                            <input type="password" id="register-code" class="form-control" placeholder="请填写验证码" aria-required="true">
+                            <input type="button" value="获取验证码">
                             <p class="help-block help-block-error"></p>
                         </div>
                         <div class="form-group field-loginform-password required">
                             <label class="control-label" for="loginform-password">邀请码</label>
-                            <input type="password" id="register-inviteCode" class="form-control" placeholder="选填"
-                                aria-required="true">
+                            <input type="password" id="register-inviteCode" class="form-control" placeholder="选填" aria-required="true">
 
                             <p class="help-block help-block-error"></p>
-                        </div>                
+                        </div>
                         <input type="submit" class="" value="登录">
                         <a href="javascript:void(0);" class="sign_register" @click="showLogin">立即登录</a>
                         <a href="javascript:void(0);" class="forgot_pass" @click="showReset">找回密码</a>
@@ -774,10 +595,8 @@
 
                         <div class="form-group field-loginform-email required">
                             <label class="control-label" for="loginform-email">电子邮件</label>
-                            <input type="text" id="reset-email" class="form-control" placeholder="请填写注册的电子邮件" 
-                                autofocus="" aria-required="true">
+                            <input type="email" id="reset-email" class="form-control" placeholder="请填写订阅的电子邮件" autofocus="">
 
-                            <p class="help-block help-block-error"></p>
                         </div>
                         <input type="submit" class="" value="登录">
                     </form>
@@ -788,6 +607,7 @@
     </div>
     <script type="text/javascript" src="./js/vue.min.js"></script>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.min.js"></script>
     <script type="text/javascript">
         var app = new Vue({
             el: '#main',
@@ -796,9 +616,30 @@
                 hours: '',
                 minutes: '',
                 seconds: '',
-                loginActive:'',
-                registerActive:'',
-                resetActive:'',
+                loginActive: '',
+                registerActive: '',
+                resetActive: '',
+                teamList: [], //团队
+                consultList: [], //投资顾问
+                partnerList: [], //合作伙伴
+                email: '', //订阅邮件
+                validata: {
+                    email: {
+                        is: false,
+                        title: ''
+                    },
+                    loginform: {
+                        email: '',
+                        pwd: ''
+                    }
+                },
+                login: {
+                    email: '',
+                    pwd: ''
+                },
+                i18n: {}, //国际化信息
+                i18n_name: 'CN',
+                newsList: [{}, {}, {}, {}, {}, {}, {}, {}], //媒体文章
                 progress_proportion_num: '23.5',
                 progress_proportion_num_width: { //实际金额位置
                     left: ' calc(60% - 15px)'
@@ -816,27 +657,27 @@
                 }
             },
             methods: {
-                timeFn: function (d1) {
+                timeFn: function(d1) {
                     //如果时间格式是正确的，那下面这一步转化时间格式就可以不用了
                     var dateBegin = new Date(d1.replace(/-/g, "/")); //将-转化为/，使用new Date
                     var dateEnd = new Date(); //获取当前时间
-                    var dateDiff = dateEnd.getTime() - dateBegin.getTime(); //时间差的毫秒数
+                    var dateDiff = dateBegin.getTime() - dateEnd.getTime(); //时间差的毫秒数
                     var dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000)); //计算出相差天数
                     var leave1 = dateDiff % (24 * 3600 * 1000) //计算天数后剩余的毫秒数
                     var hours = Math.floor(leave1 / (3600 * 1000)) //计算出小时数
-                    //计算相差分钟数
+                        //计算相差分钟数
                     var leave2 = leave1 % (3600 * 1000) //计算小时数后剩余的毫秒数
                     var minutes = Math.floor(leave2 / (60 * 1000)) //计算相差分钟数
-                    //计算相差秒数
+                        //计算相差秒数
                     var leave3 = leave2 % (60 * 1000) //计算分钟数后剩余的毫秒数
                     var seconds = Math.round(leave3 / 1000);
                     this.dayDiff = dayDiff;
-                    this.hours = hours;
-                    this.minutes = minutes;
-                    this.seconds = seconds;
+                    this.hours = hours < 10 ? '0' + hours : hours;
+                    this.minutes = minutes < 10 ? '0' + minutes : minutes;
+                    this.seconds = seconds < 10 ? '0' + seconds : seconds;
                     // console.log(" 相差 " + dayDiff + "天 " + hours + "小时 " + minutes + " 分钟" + seconds + " 秒")
                 },
-                initCanvas: function () {
+                initCanvas: function() {
                     //http://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html
                     var canvas1 = document.getElementById("canvas1");
                     var ctx1 = canvas1.getContext("2d")
@@ -890,31 +731,31 @@
                     ctx6.bezierCurveTo(14, 84, 78, 65, 130, 66);
                     ctx6.stroke();
                 },
-                outHide: function () {
-                    $('.team_item').hover(function () {
+                outHide: function() {
+                    $('.team_item').hover(function() {
                         $(".cover", this).stop().animate({
                             top: '0px'
                         }, {
                             queue: false,
-                            duration: 500
+                            duration: 300
                         });
-                    }, function () {
+                    }, function() {
                         $(".cover", this).stop().animate({
                             top: '360px'
                         }, {
                             queue: false,
-                            duration: 500
+                            duration: 300
                         });
                     });
                     var i = 0;
-                    $('.team_item').on("click", function () {
+                    $('.team_item').on("click", function() {
                         if (i == 0) {
                             i = 1;
                             $(".cover", this).stop().animate({
                                 top: '0px'
                             }, {
                                 queue: false,
-                                duration: 500
+                                duration: 300
                             });
                         } else {
                             i = 0;
@@ -922,26 +763,26 @@
                                 top: '360px'
                             }, {
                                 queue: false,
-                                duration: 500
+                                duration: 300
                             });
                         }
                     })
 
                 },
                 /*包含带小数的数字处理,千位加逗号,分位保留,*/
-                formatNumldy: function (strNum) {
-                    var outputmoney = function (number) {
-                        number = number.replace(/\,/g, ""); //把所有的逗号，清除
-                        if (isNaN(number) || number == "") return "";
-                        number = Math.round(number * 100) / 100;
-                        if (number < 0)
-                            return '-' + outputdollars(Math.floor(Math.abs(number) - 0) + '') +
-                                outputcents(Math.abs(number) - 0);
-                        else
-                            return outputdollars(Math.floor(number - 0) + '');
-                    }
-                    //格式化金额
-                    var outputdollars = function (number) {
+                formatNumldy: function(strNum) {
+                    var outputmoney = function(number) {
+                            number = number.replace(/\,/g, ""); //把所有的逗号，清除
+                            if (isNaN(number) || number == "") return "";
+                            number = Math.round(number * 100) / 100;
+                            if (number < 0)
+                                return '-' + outputdollars(Math.floor(Math.abs(number) - 0) + '') +
+                                    outputcents(Math.abs(number) - 0);
+                            else
+                                return outputdollars(Math.floor(number - 0) + '');
+                        }
+                        //格式化金额
+                    var outputdollars = function(number) {
                         if (number.length <= 3)
                             return (number == '' ? '0' : number);
                         else {
@@ -956,39 +797,184 @@
                             return (output);
                         }
                     }
-                    var outputcents = function (amount) {
+                    var outputcents = function(amount) {
                         amount = Math.round(((amount) - Math.floor(amount)) * 100);
                         return (amount < 10 ? '.0' + amount : '.' + amount);
                     }
                     return outputmoney(strNum + "");
                 },
-                showLogin:function(){
+                showLogin: function() {
                     this.loginActive = (this.loginActive ? '' : 'active');
                     this.registerActive = '';
                     this.resetActive = '';
                 },
-                showRegister:function(){
+                showRegister: function() {
                     this.registerActive = (this.registerActive ? '' : 'active');
                     this.loginActive = '';
                     this.resetActive = '';
                 },
-                showReset:function(){
+                showReset: function() {
                     this.resetActive = (this.resetActive ? '' : 'active');
                     this.registerActive = '';
                     this.loginActive = '';
+                },
+                switchI18n: function(i18n) {
+                    this.i18n_name = i18n;
+                    sessionStorage.setItem('i18n', i18n);
+
+                },
+                getI18n: function(type) {
+                    var self = this;
+                    $.ajax({
+                        url: 'https://www.greeninnov.cn/irs-maven/dictionary/getDictionaryApiByType',
+                        type: "GET",
+                        dataType: 'jsonp',
+                        data: {
+                            type: type,
+                            page: 1,
+                            limit: 1000
+                        },
+                        success: function(json) {
+                            json.data.forEach(function(item) {
+                                self.i18n[item.dictionaryKey] = item.dictionaryValue
+                            })
+                        }
+                    })
+                },
+                getTeamByTypeList: function() {
+                    var self = this;
+                    $.ajax({
+                        url: 'https://www.greeninnov.cn/irs-maven/team/getTeamByTypeList',
+                        type: "GET",
+                        dataType: 'jsonp',
+                        data: {
+                            type: 1,
+                            page: 1,
+                            limit: 8
+                        },
+                        success: function(json) {
+                            self.teamList = json.data;
+                            setTimeout(function() {
+                                self.outHide();
+                            }, 500)
+                        }
+                    })
+                },
+                getConsultList: function() {
+                    var self = this;
+                    $.ajax({
+                        url: 'https://www.greeninnov.cn/irs-maven/team/getTeamByTypeList',
+                        type: "GET",
+                        dataType: 'jsonp',
+                        data: {
+                            type: 2,
+                            page: 1,
+                            limit: 3
+                        },
+                        success: function(json) {
+                            self.consultList = json.data;
+                            setTimeout(function() {
+                                self.outHide();
+                            }, 500)
+                        }
+                    })
+                },
+                getPartnerAPIByType: function() {
+                    var self = this;
+                    $.ajax({
+                        url: 'https://www.greeninnov.cn/irs-maven/partner/getPartnerAPIByType',
+                        type: "GET",
+                        dataType: 'jsonp',
+                        data: {
+                            type: 1,
+                            page: 1,
+                            limit: 6
+                        },
+                        success: function(json) {
+                            self.partnerList = json.data;
+
+                        }
+                    })
+                },
+                getNewsList: function() {
+                    var self = this;
+                    $.ajax({
+                        url: 'https://www.greeninnov.cn/irs-maven/partner/getPartnerAPIByType',
+                        type: "GET",
+                        dataType: 'jsonp',
+                        data: {
+                            type: 2,
+                            page: 1,
+                            limit: 8
+                        },
+                        success: function(json) {
+                            self.newsList = $.extend(self.newsList, json.data);
+                        }
+                    })
+                },
+                subEamil: function() {
+                    var self = this;
+                    var re = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+                    if (re.test(self.email)) {
+                        $.ajax({
+                            url: 'https://www.greeninnov.cn/irs-maven/email/insEmailAPIByType',
+                            type: "GET",
+                            dataType: 'jsonp',
+                            data: {
+                                email: self.email
+                            },
+                            success: function(json) {
+                                alert('订阅成功！')
+                                self.email = "";
+                            }
+                        })
+                    } else {
+
+                        alert('非法邮箱格式，请重新输入')
+                        return;
+                    }
+
+                },
+                login: function() {
+                    debugger
+                    var self = this;
+                    var re = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+                    if (!re.test(self.login.email)) {
+                        self.validata.loginform.email = '非法邮箱格式，请重新输入';
+                        return;
+                    } else if (self.login.pwd.length <= 0) {
+                        self.validata.loginform.pwd = '请输入密码';
+                        return;
+                    }
+
                 }
 
 
             },
-            mounted: function () {
+            mounted: function() {
                 var self = this;
-                var t3 = "2018-08-26 04:56:38";
-                setInterval(function () {
+                var t3 = "2018-09-26 04:56:38";
+                setInterval(function() {
                     self.timeFn(t3)
                 }, 1000);
+                var i18n = sessionStorage.getItem('i18n');
+                if (i18n) {
+                    if (i18n == 'CN') {
+                        self.getI18n(10000);
+                    } else {
+                        self.getI18n(20000);
+                    }
+                } else {
+                    self.getI18n(10000);
+                }
+
 
                 self.initCanvas();
-                self.outHide();
+                self.getTeamByTypeList();
+                self.getConsultList();
+                self.getPartnerAPIByType();
+                self.getNewsList();
+                window.ss = self;
 
                 self.progress_proportion_money = this.formatNumldy(self.progress_proportion_money);
                 self.progress_proportion_count = this.formatNumldy(self.progress_proportion_count);

@@ -21,6 +21,7 @@ footer {
     -webkit-clip-path: none;
     margin-top: 0;
 }
+
 .left_username {
     color: #1151cf;
     text-align: center;
@@ -28,7 +29,7 @@ footer {
     line-height: 40px;
 }
 
-.left_username::after{
+.left_username::after {
     content: ' ';
     height: 1px;
     width: 90%;
@@ -37,10 +38,11 @@ footer {
     border-bottom: 1px solid #efefef;
     margin: 0 auto;
 }
+
 .left_menu a {
     display: block;
     text-align: left;
-    line-height: 30px;
+    line-height: 45px;
     font-size: 16px;
     color: #666;
     padding-left: 30px;
@@ -49,29 +51,35 @@ footer {
 .left_menu {
     padding-top: 20px;
 }
+
 .el-col {
     border-radius: 4px;
-  }
-  .bg-purple-dark {
+}
+
+.bg-purple-dark {
     background: #99a9bf;
-  }
-  .bg-purple {
+}
+
+.bg-purple {
     background: #fff;
-  }
-  .bg-purple-light {
+    padding-top: 20px;
+}
+
+.bg-purple-light {
     background: #fff;
-  }
-  .grid-content {
+}
+
+.grid-content {
     border-radius: 4px;
-    min-height: 36px;
-  }
-  .bingo_money {
+    min-height: 720px;
+    padding-bottom: 30px;
+}
+
+.bingo_money {
     background: #f09b00;
     border-radius: 5px;
     height: 100px;
 }
-
-
 
 .bingo_money div:first-child {
     height: 50px;
@@ -83,11 +91,253 @@ footer {
     height: 50px;
     text-align: right;
     padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
+
 .bingo_money.touzi {
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 40px 20px;
 }
 
 .bingo_money.tuijian {
     margin: 20px 20px 20px 0;
+}
+
+.time-vertical {
+    list-style-type: none;
+    padding: 0 25px;
+    height: 400px;
+    margin-top: 0;
+}
+
+.time-vertical li {
+    height: 100px;
+    position: relative;
+}
+
+.time-vertical li::after {
+    content: ' ';
+    height: 90%;
+    border: 1px solid #1151cf;
+    position: absolute;
+    top: 20px;
+    left: 9px;
+}
+
+.time-vertical li a {
+    display: inline-block;
+    margin-left: 20px;
+    /* margin-top: 15px; */
+    text-decoration: none;
+    color: #000;
+}
+
+.time-vertical li b:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #1151cf;
+}
+
+.time-vertical li span {
+    position: absolute;
+    color: #fff;
+    top: 0px;
+    left: 7px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.form_right_t {
+    color: #000;
+    padding-left: 0 !important;
+    margin-left: -15px;
+}
+
+.form_right_t.r_t {
+    line-height: 30px;
+}
+
+.form_right_t h5 {
+    margin: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    background: #1151cf;
+    border-radius: 10px;
+}
+
+.f_r_r_label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #1151cf;
+}
+
+.data_row .form_right_t h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    padding: 0px 60px;
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    margin-left: 20px;
+    min-width: 200px;
+}
+
+.data_row .form_right_t {
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.data_row .form_right_t.r1 {
+    line-height: 70px;
+}
+
+.form_right_t p {
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: left;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+p.line_s {
+    width: 2px;
+    background: #1151cf;
+    height: 100%;
+    margin: 0 9px 0 9px;
+}
+
+.r2 p.line_s {
+    position: absolute;
+}
+
+.form_right_t input {
+    width: 640px;
+    margin-bottom: 10px;
+    padding: 11px;
+    border-radius: 50px;
+    transition: all .3s;
+    background: #f5f5f5;
+    margin-right: 0;
+    font-size: 12px;
+    color: #000;
+}
+
+.form_right_t table td {
+    width: 380px;
+}
+
+.form_right_t table td input {
+    margin: 0;
+}
+
+.form_right_t table td:nth-child(2) {
+    width: 10px;
+}
+
+.form_right_t table input {
+    width: 100%
+}
+
+.r2_1 {
+    margin-bottom: 20px;
+}
+
+.data_row .form_right_t.r4 h4 {
+    margin-left: 40px;
+    background: #f09b00;
+    border: 0;
+    color: #fff;
+}
+
+.left_menu a.active {
+    border-left: 3px solid #1151cf;
+    color: #1151cf;
+    font-weight: bold;
+}
+
+.token {
+    padding-top: 20px;
+}
+
+.token .f_r_r_label {
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.token .form_right_t table td:nth-child(2) {
+    width: 380px;
+}
+
+.payinfo {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.payinfo .form_right_t table td {
+    line-height: 30px;
+}
+
+.payinfo .bold_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.payinfo .bold_title1 {
+    color: #9a9a9a;
+}
+
+.payinfo .form_right_t {
+    color: #636363;
+}
+
+.payinfo .data_row .form_right_t h4 {
+    background: #f09b00;
+    color: #fff;
+    border: 0;
+    margin-right: 20px;
+}
+
+
+.safety {
+    padding-top: 20px;
+}
+
+.safety .f_r_r_label {
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.safety .form_right_t table td:nth-child(2) {
+    width: 380px;
+}
+
+.safety .data_row .form_right_t h4 {
+    margin-left: 0;
+}
+.bingo-header-cell {
+    background: #f5f5f5!important;
+}
+.safety .data_row.el-row {
+    margin-bottom: 20px;
 }

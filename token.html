@@ -102,104 +102,83 @@
                             </div>
                         </el-col>
                         <el-col :span="20">
-                            <div class="grid-content bg-purple-light">
-                                <el-row :gutter="20">
-                                    <el-col :span="12">
-                                        <div class="bingo_money touzi">
-                                            <div>当前投资所得</div>
-                                            <div>0 BINGO</div>
-                                        </div>
-                                    </el-col>
-                                    <el-col :span="12">
-                                        <div class="bingo_money tuijian">
-                                            <div>推荐计划所得</div>
-                                            <div>0 BINGO</div>
-                                        </div>
-                                    </el-col>
-                                </el-row>
+                            <div class="grid-content bg-purple-light token">
+                                
                                 <el-row>
                                     <el-col :span="1">&nbsp;</el-col>
                                     <el-col :span="23" class="form_right_t r_t">
-                                        <h5>1</h5>
-                                        <div class="f_r_r_label">获取KYC验证</div>
+                                        <div class="f_r_r_label">KYC验证</div>
                                     </el-col>
                                 </el-row>
-                                <el-row class="data_row">
-                                    <el-col :span="1">&nbsp;</el-col>
-                                    <el-col :span="23" class="form_right_t r1">
-                                        <p class="line_s">&nbsp;</p>
-                                        <h4>* KYC验证</h4>
-                                        <p> 已提交验证，请等待审核</p>
-                                    </el-col>
-                                </el-row>
-                                <el-row>
-                                    <el-col :span="1">&nbsp;</el-col>
-                                    <el-col :span="23" class="form_right_t r_t">
-                                        <h5>2</h5>
-                                        <div class="f_r_r_label">添加钱包</div>
-                                    </el-col>
-                                </el-row>
+                                
                                 <el-row class="data_row ">
                                     <el-col :span="1">&nbsp;</el-col>
                                     <el-col :span="23" class="form_right_t r2">
-                                        <p class="line_s">&nbsp;</p>
-                                        <div style="display:inline-block;padding-left: 20px;">
-                                            <div class="r2_1">
-
-                                                <div style="display:inline-block;">
-                                                    <input type="text" id="loginform-email" value="ASDFADKFJHADFNXHGZHJDSAKFNASDKFHASDFHAJKSDNFKAJSDHFKASDVN"
-                                                        autofocus="autofocus" aria-required="true" class="form-control">
-                                                    <h4>添加</h4>
-                                                    <span style="display: block; margin-left: 30px;">提示：此钱包是您发送ETH的钱包地址，务必位公共钱包地址。</span>
-                                                </div>
-                                            </div>
-                                            <div class="r2_1">
-                                                <div style="display:inline-block;">
-                                                    <input type="text" id="loginform-email" value="ASDFADKFJHADFNXHGZHJDSAKFNASDKFHASDFHAJKSDNFKAJSDHFKASDVN"
-                                                        autofocus="autofocus" aria-required="true" class="form-control">
-                                                    <h4>添加</h4>
-                                                    <span style="display: block; margin-left: 30px;">提示：此钱包是您发送ETH的钱包地址，务必位公共钱包地址。</span>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </el-col>
-
-                                </el-row>
-                                <el-row>
-                                    <el-col :span="1">&nbsp;</el-col>
-                                    <el-col :span="23" class="form_right_t r_t">
-                                        <h5>3</h5>
-                                        <div class="f_r_r_label">购买BINGO</div>
-                                    </el-col>
-                                </el-row>
-                                <el-row class="data_row ">
-                                    <el-col :span="1">&nbsp;</el-col>
-                                    <el-col :span="23" class="form_right_t r2">
-                                        <p class="line_s">&nbsp;</p>
-                                        <div style="display:inline-block;padding-left: 40px;">
-                                            <div class="r2_1">
-                                                <div style="display:inline-block;">
-                                                    1 BINGO = 0.006 USD (本次 ICO 接收 ETH 以 Cryptocurrencles 实时价为准）
-                                                </div>
-                                            </div>
+                                        <div style="display:inline-block;">
                                             <div class="r2_1">
                                                 <div style="display:inline-block;">
                                                     <table width="100%">
                                                         <tr>
-                                                            <td>*USD</td>
-                                                            <td></td>
-                                                            <td>*BINGO</td>
+                                                            <td>*名：</td>
+                                                            <td>*姓：</td>
+                                                            <td>*出生年月：</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
                                                                     <input type="text" value="0.00"
                                                                     autofocus="autofocus" aria-required="true" class="form-control">
                                                             </td>
-                                                            <td>=</td>
+                                                            <td><input type="text" value="0.00"
+                                                                autofocus="autofocus" aria-required="true" class="form-control"></td>
                                                             <td>
                                                                     <input type="text"  value="0.00"
                                                                     autofocus="autofocus" aria-required="true" class="form-control">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>手机号</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                    <input type="text" value="0.00"
+                                                                    autofocus="autofocus" aria-required="true" class="form-control">
+                                                            </td>
+                                                            <td colspan="2"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>国家</td>
+                                                            <td>地址</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                    <input type="text" value="0.00"
+                                                                    autofocus="autofocus" aria-required="true" class="form-control">
+                                                            </td>
+                                                            <td colspan="2"><input type="text" value="0.00"
+                                                                autofocus="autofocus" aria-required="true" class="form-control"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>确认身份文件类型：</td>
+                                                            <td>确认身份脸部照片和文件</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                    <img src="./imgs/tpkyc01.png" alt="">
+                                                            </td>
+                                                            <td ><img src="./imgs/tpkyc02.png" alt="">
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3">
+                                                                    本申请中提供的所有信息都是完整和准确的。如果上述信息发生任何变化，他会立即通知NEUROMACHINE。<br>
+                                                                    同意则表示同意处理和存储您的个人资料。
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -210,17 +189,11 @@
                                     </el-col>
 
                                 </el-row>
-                                <el-row>
-                                        <el-col :span="1">&nbsp;</el-col>
-                                        <el-col :span="23" class="form_right_t r_t">
-                                            <h5>4</h5>
-                                            <div class="f_r_r_label">投资</div>
-                                        </el-col>
-                                    </el-row>
+
                                     <el-row class="data_row">
                                             <el-col :span="1">&nbsp;</el-col>
                                             <el-col :span="23" class="form_right_t r4">
-                                                <h4>投资</h4>
+                                                <h4>提交验证</h4>
                                             </el-col>
                                         </el-row>
                             </div>
