@@ -318,7 +318,6 @@ p.line_s {
     margin-right: 20px;
 }
 
-
 .safety {
     padding-top: 20px;
 }
@@ -335,9 +334,11 @@ p.line_s {
 .safety .data_row .form_right_t h4 {
     margin-left: 0;
 }
+
 .bingo-header-cell {
     background: #f5f5f5!important;
 }
+
 .safety .data_row.el-row {
     margin-bottom: 20px;
 }
